@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Adèle Helena Ribeiro / Personal Webpage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Adèle Helena Ribeiro"
+description              : &description "Postdoctoral Research Scientist"
 url                      : https://adele.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "adele/adele.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Adèle Helena Ribeiro"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Postdoctoral Research Scientist"
+  location         : "Columbia University"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=adele+ribeiro"
   googlescholar    : "https://scholar.google.com/citations?user=Py9MTe4AAAAJ&hl=en"
