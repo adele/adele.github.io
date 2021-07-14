@@ -33,7 +33,7 @@ body{
     font-family: 'Roboto', sans-serif;
     line-height: 28px;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 18px;
     color:#282828;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -63,6 +63,12 @@ a:hover {
     text-decoration: none;
 }
 
+.email {
+    font-family: monospace, monospace;
+    outline: none;
+    color: #333333;
+    text-decoration: none;
+}
 
 /* Transition elsements
 -------------------------------------------------------- */
@@ -185,7 +191,7 @@ h6 {
 .btn-lg, 
 .btn-group-lg>.btn {
     padding: 14px 20px;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 4px;
 }
 
@@ -287,7 +293,14 @@ ul.list-check li::before {
 
 /* === MAIN === */
 .section-padding {
-	padding: 120px 0 100px;
+  margin-top: -100px;
+	padding: 140px 0 100px;
+}
+
+.table-borderless {
+    border-collapse: separate;
+    border-spacing:0 20px;
+    border: none; 
 }
 
 
@@ -385,50 +398,36 @@ ul.list-check li::before {
 SOCIAL ICON 
 -------------------------------------------*/
 .social-icons {
-    margin-top: 20px;
+    margin-top: 0px;
 }
+  
+.social-icons a i {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
 .social-icons a i{
     position: relative;
-    color: #fff;
     font-size: 18px;
     margin: 0 7px;
     line-height: 40px;
     text-align: center;
     width: 40px;
     height: 40px;
-}
-
-.social-icons a i::before {
-    position: relative;
-    z-index: 1;
-}
-
-.social-icons a i::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transition: all 300ms;
-       -moz-transition: all 300ms;
-         -o-transition: all 300ms;
-            transition: all 300ms;            
-}
-
-.social-icons a i:hover::after{
-    background: #68c3a3;
-    border: 1px solid transparent;
     z-index: 0;
 }
 
+.social-icons a i:hover{
+    background-color: #4eb38f;
+}
 
 /* === NAVIGATION === */
 .header {
@@ -498,10 +497,10 @@ SOCIAL ICON
 
 .navbar-custom .navbar-nav > li > a{
     color: #282828;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-transform: uppercase;
 }
 
@@ -597,6 +596,18 @@ SOCIAL ICON
     width: 100%;
     border-radius: 10px;
     height: 20px;
+}
+
+.logo{
+    position: absolute;
+    background: url(../../assets/images/logo.png) bottom left no-repeat;
+    width: 20%;
+    background-size: contain;
+}
+
+.logo img{
+    position: relative;
+    z-index: -1;
 }
 
 .myphoto{
@@ -830,9 +841,6 @@ Resume Timeline
 }
 
 
-
-
-
 @media(min-width:992px) {
 .timeline:before {
     left: 50%;
@@ -851,7 +859,7 @@ Resume Timeline
 
 .timeline>li .timeline-panel {
     float: left;
-    width: 43%;
+    width: 45%;
     text-align: right;
     border: 1px solid #eee;
     position: relative;
@@ -878,9 +886,23 @@ Resume Timeline
     z-index: -1;
 }
 
+.timeline-link {
+    color: black;
+}
+
+
+.timeline-link a:hover {
+   color: white;
+   z-index: 0;
+}
+
+.timeline-content a:hover {
+    color: white;
+}
+
 .timeline>li .timeline-content:hover {
     background: #68c3a3;
-    color: #fff;
+    color: white;
 }
 
 .timeline>li .timeline-panel::before,
@@ -955,7 +977,7 @@ Resume Timeline
     left: 50%;
     width: 120px;
     margin-left: -60px;
-    margin-top: 28px;
+    margin-top: 10px;
 }
 .timeline>li .posted-date .month {
     float: none;
@@ -1158,7 +1180,7 @@ Resume Timeline
 .links,
 .links a i,
 .links a i::after,
-.tt-overlay {
+.tt-overlay { 
     -webkit-transition: all 400ms;
     -moz-transition: all 400ms;
     -o-transition: all 400ms;
@@ -1646,8 +1668,6 @@ Icon for all respective meta
 
 
 
-
-
 /* === Home Page Two === */
 
 #homeTwo {
@@ -1811,4 +1831,63 @@ Icon for all respective meta
     border: 5px solid #FFF;
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
+}
+
+.list-group .list-group-item{
+  border: 0 none;
+}
+
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: transparent;
+    font-weight: 300;
+}
+
+
+.panel-default{
+  border: 0;
+  font-weight: 300;
+}
+
+.panel-group .panel-heading+.panel-collapse .panel-body { 
+    border: 0;
+    border: none;
+}
+
+
+[data-toggle="collapse"]:after {
+    display: inline-block;
+    font: normal normal normal 18px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+  padding: 10px;
+  transform: rotate(-90deg) ;
+  transition: all linear 0.15s;
+  color:#68c3a3;
+  }   
+[data-toggle="collapse"].collapsed:after {
+  transform: rotate(90deg) ;
+}
+
+
+
+.list-info {
+    margin-bottom: 40px;
+}
+
+.list-info h3 {
+    margin-bottom: 30px;
+}
+
+.list-info ul {
+    margin-top: 10px;
+    display:inline-block;
+}
+.list-info ul li {
+    width: 100%;
+    float: left;
 }
