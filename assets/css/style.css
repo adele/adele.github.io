@@ -48,7 +48,7 @@ body, html{
 /* Link style
 ---------------------------------------------------------*/
 a {
-    color: #68c3a3;
+    color: #1a8cd9;
 }
 a,
 a > * {
@@ -152,7 +152,7 @@ h6 {
 }
 
 .form-control:focus {
-    border-color: #68c3a3;
+    border-color: #1a8cd9;
     box-shadow: none;
 }
 
@@ -197,7 +197,7 @@ h6 {
 
 /*btn-primary*/
 .btn-primary{
-    background-color:#68c3a3;
+    background-color:#1a8cd9;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -208,8 +208,8 @@ h6 {
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #4eb28f;
-    border-color: #4eb28f;
+    background-color: #0670b8;
+    border-color: #0670b8;
 }
 
 /*btn-info*/
@@ -240,7 +240,7 @@ h6 {
 .btn-default.focus, 
 .btn-default:active, 
 .btn-default.active{
-    color: #68c3a3;
+    color: #1a8cd9;
     background-color: #fff;
     border-color: #fff;
 }
@@ -286,7 +286,7 @@ ul.list-check li{
 ul.list-check li::before {
     content: "\f00c";
     font-family: fontawesome;
-    color: #68c3a3;
+    color: #1a8cd9;
     margin-right: 10px;
 }
 
@@ -377,7 +377,7 @@ ul.list-check li::before {
 	color: #52b3d9;
 }
 .intro h1 span{
-	color: #68c3a3;
+	color: #1a8cd9;
 }
 .intro p{
 	color: #f7f7f7;
@@ -426,7 +426,7 @@ SOCIAL ICON
 }
 
 .social-icons a i:hover{
-    background-color: #4eb38f;
+    background-color: #1a8cd9;
 }
 
 /* === NAVIGATION === */
@@ -474,7 +474,7 @@ SOCIAL ICON
     visibility: hidden;
     opacity:0;
     border: 1px solid #ddd;
-    border-top: 2px solid #68c3a3;
+    border-top: 2px solid #1a8cd9;
     border-radius: 0;
     border-bottom: 3px double #ddd;
     background-color: #FFFFFF;
@@ -499,8 +499,8 @@ SOCIAL ICON
     color: #282828;
     font-size: 18px;
     font-weight: 700;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -525,12 +525,7 @@ SOCIAL ICON
 .navbar-custom .navbar-nav > li.active > a {
     background: none;
     outline: 0;
-    color: #68c3a3;
-}
-
-.navbar-custom .navbar-brand {
-    font-weight: 700;
-    font-size: 18px;
+    color: #1a8cd9;
 }
 
 .navbar-custom .nav .open > a,
@@ -669,7 +664,7 @@ SOCIAL ICON
     border: 1px solid #fff;
 }
 .video-intro a:hover {
-    color: #68c3a3;
+    color: #1a8cd9;
     background-color: #fff;
     border: 1px solid transparent;
 }
@@ -901,7 +896,7 @@ Resume Timeline
 }
 
 .timeline>li .timeline-content:hover {
-    background: #68c3a3;
+    background: #1a8cd9;
     color: white;
 }
 
@@ -922,7 +917,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::before {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #1a8cd9;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::before {
@@ -934,7 +929,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #1a8cd9;
     border-left: 0;
 }
 
@@ -956,7 +951,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #1a8cd9;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
@@ -969,7 +964,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #1a8cd9;
     border-left: 0;
 }
 
@@ -1028,7 +1023,7 @@ Resume Timeline
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #1a8cd9;
 }
 .progress-bar span{
     position: absolute;
@@ -1139,7 +1134,7 @@ Resume Timeline
 
 
 #filter li a {
-    color: #68c3a3;
+    color: #1a8cd9;
     display: block;
     text-transform: uppercase;
     padding: 0 15px;
@@ -1149,7 +1144,7 @@ Resume Timeline
 #filter li a.active,
 #filter li a:hover {
     position: relative;
-    background: #68c3a3;
+    background: #1a8cd9;
     color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
@@ -1206,7 +1201,7 @@ Resume Timeline
 
 .links a i{
     position: relative;
-    color: #68c3a3;
+    color: #1a8cd9;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
@@ -1221,7 +1216,7 @@ Resume Timeline
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #68c3a3;
+    border: 1px solid #1a8cd9;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1231,14 +1226,14 @@ Resume Timeline
             transform: rotate(45deg);
 }
 .links a:hover i::after {
-    background-color: #68c3a3;
+    background-color: #1a8cd9;
 }
 
 .portfolio-info {
     position: absolute;
     bottom: -100%;
     left: 0;
-    background-color: #68c3a3;
+    background-color: #1a8cd9;
     color: #fff;
     height: 45px;
     width: 100%;
@@ -1348,7 +1343,7 @@ Resume Timeline
     top: -10px;
     width: 40px;
     height: 40px;
-    background-color: #68c3a3;
+    background-color: #1a8cd9;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1400,7 +1395,7 @@ Resume Timeline
     color: #282828;
 }
 .entry-title a:hover{
-    color: #68c3a3;
+    color: #1a8cd9;
 }
 .entry-meta {
     color: #afafaf;
@@ -1417,7 +1412,7 @@ Resume Timeline
     font-weight: 400;
 }
 .entry-meta ul li a:hover{
-    color: #68c3a3;
+    color: #1a8cd9;
 }
 
 .blog-more {
@@ -1459,17 +1454,17 @@ Icon for all respective meta
 
 /* === Hire Section === */
 .hire-section {
-    background: url(../../assets/images/hire-bg.jpg) no-repeat top center #68C3A3;
+    background: url(../../assets/images/hire-bg.jpg) no-repeat top center #1a8cd9;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
 }
 .hire-section-bg {
     padding: 110px 0;
-    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Standard*/
+    background: -webkit-linear-gradient(bottom, #1a8cd9, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, #1a8cd9, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top, #1a8cd9, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
+    background: linear-gradient(to top, #1a8cd9, rgba(104, 195, 163, 0.7)); /*Standard*/
 }
 
 .hire-section h2 {
@@ -1559,7 +1554,7 @@ Icon for all respective meta
 }
 
 .scroll-up a {
-	background-color: #68c3a3;
+	background-color: #1a8cd9;
 	display: block;
 	width: 28px;
 	height: 28px;
@@ -1817,7 +1812,7 @@ Icon for all respective meta
 }
 
 .personal-info h1 span{
-    color:#68c3a3;
+    color:#1a8cd9;
 }
 .personal-info p {
     margin-bottom: 40px;
@@ -1864,10 +1859,9 @@ Icon for all respective meta
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   content: "\f054";
-  padding: 10px;
   transform: rotate(-90deg) ;
   transition: all linear 0.15s;
-  color:#68c3a3;
+  color:#1a8cd9;
   }   
 [data-toggle="collapse"].collapsed:after {
   transform: rotate(90deg) ;
