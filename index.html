@@ -425,11 +425,11 @@
         <div class="panel panel-default">
         <table style="width:100%">
           <tr>
-            <td class="panel-heading" role="tab" id="heading5">Jaber, A.*, <Strong>Ribeiro, A. H.*</Strong>, Zhang, J., Bareinboim, E. (2022). Causal Identification under Markov equivalence: Calculus, Algorithm, and Completeness.<i> In Proceedings of the 36th Annual Conference on Neural Information Processing Systems (NeurIPS-22).</i> <a href="https://causalai.net/r86a.pdf" target="_blank"> (Preprint) </a></td>
-            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"></a></td>
+            <td class="panel-heading" role="tab" id="heading6">Jaber, A.*, <Strong>Ribeiro, A. H.*</Strong>, Zhang, J., Bareinboim, E. (2022). Causal Identification under Markov equivalence: Calculus, Algorithm, and Completeness.<i> In Proceedings of the 36th Annual Conference on Neural Information Processing Systems (NeurIPS-22).</i> <a href="https://causalai.net/r86a.pdf" target="_blank"> (Preprint) </a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"></a></td>
           </tr> 
         </table>
-        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
             <div class="panel-body">
               One common task in many data sciences applications is to answer questions about
 the effect of new interventions, like: what would happen to Y if we make X equal
@@ -462,8 +462,36 @@ Third, we prove the proposed calculus to be complete for the same task.
         </table>
         <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
             <div class="panel-body">
-              One pervasive task found throughout the empirical sciences is to determine the effect of interventions  from non-experimental data. It is well-understood that assumptions are necessary to perform such causal inferences, an idea popularized through Cartwright's motto: "no causes-in, no causes-out." One   way of articulating these assumptions is through the use of causal diagrams, which are a special type of graphical model with causal semantics [Pearl, 2000]. The graphical approach has been applied successfully in many settings, but there are still challenges to its use,  particularly in complex,  high-dimensional domains. In medicine, for example,  background knowledge may exist about the relationships among a subset of variables, but usually not all of them. In this paper, we introduce <i>cluster causal diagrams</i> (for short, C-DAGs) to allow for the representation of partial understanding of the relationships among variables, which has the potential of alleviating  DAGs' somewhat stringent requirements. C-DAGs provide a simple yet effective way to partially abstract a grouping of variables among which causal relationships are not fully understood. Our goal is to develop machinery to reason on top of C-DAG's new representation. In particular, we first define a new version of the d-separation criterion, and prove its soundness and completeness. Second, we extend these new separation rules and prove the validity of the corresponding do-calculus. Lastly, we show that a standard identification algorithm can systematically compute causal effects from observational data with cluster causal diagrams.
-            </div>
+            Reasoning about the effect of interventions and counterfactuals is a fundamental task found throughout the data sciences.
+A collection of principles, algorithms, and tools has been developed
+for performing such tasks in the last decades (Pearl, 2000). One of the pervasive requirements found throughout
+this literature is the articulation of assumptions, which commonly
+appear in the form of causal diagrams. Despite the
+power of this approach, there are significant settings where
+the knowledge necessary to specify a causal diagram over
+all variables is not available, particularly in complex, high-dimensional
+domains. In this paper, we introduce a new graphical modeling tool called cluster DAGs (for short, CDAGs)
+that allows for the partial specification of relationships
+among variables based on limited prior knowledge, alleviating
+the stringent requirement of specifying a full causal
+diagram. A C-DAG specifies relationships between clusters
+of variables, while the relationships between the variables
+within a cluster are left unspecified, and can be seen as a
+graphical representation of an equivalence class of causal diagrams
+that share the relationships among the clusters. We
+develop the foundations and machinery for valid inferences
+over C-DAGs about the clusters of variables at each layer of
+Pearl’s Causal Hierarchy (Pearl and Mackenzie 2018; Bareinboim
+et al. 2020) - L1 (probabilistic), L2 (interventional), and
+L3 (counterfactual). In particular, we prove the soundness
+and completeness of d-separation for probabilistic inference
+in C-DAGs. Further, we demonstrate the validity of Pearl’s
+do-calculus rules over C-DAGs and show that the standard
+ID identification algorithm is sound and complete to systematically
+compute causal effects from observational data given
+a C-DAG. Finally, we show that C-DAGs are valid for performing
+counterfactual inferences about clusters of variables.
+		</div>
           </div>
        </div>
   
