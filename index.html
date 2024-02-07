@@ -424,22 +424,31 @@
       <div class="panel panel-default">
         <table style="width:100%">
           <tr>
-            <td class="panel-heading" role="tab" id="heading9">  
+            <td class="panel-heading" role="tab" id="heading11">  
 		da Silva, T., Silva, E., <Strong>Ribeiro, A. H.</Strong>, Góis, A., Heider, D., Kaski, S. and Mesquita, D., (2023). Human-in-the-Loop Causal Discovery under Latent Confounding using Ancestral GFlowNets. <i> arXiv preprint arXiv:2309.12032 </i> <a href="https://arxiv.org/abs/2309.12032" target="_blank">(Link)</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11"></a></td>
           </tr> 
         </table>
-       </div>
+        <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+            <div class="panel-body">
+              Structure learning is the crux of causal inference. Notably, causal discovery (CD) algorithms are brittle when data is scarce, possibly inferring imprecise causal relations that contradict expert knowledge -- especially when considering latent confounders. To aggravate the issue, most CD methods do not provide uncertainty estimates, making it hard for users to interpret results and improve the inference process. Surprisingly, while CD is a human-centered affair, no works have focused on building methods that both 1) output uncertainty estimates that can be verified by experts and 2) interact with those experts to iteratively refine CD. To solve these issues, we start by proposing to sample (causal) ancestral graphs proportionally to a belief distribution based on a score function, such as the Bayesian information criterion (BIC), using generative flow networks. Then, we leverage the diversity in candidate graphs and introduce an optimal experimental design to iteratively probe the expert about the relations among variables, effectively reducing the uncertainty of our belief over ancestral graphs. Finally, we update our samples to incorporate human feedback via importance sampling. Importantly, our method does not require causal sufficiency (i.e., unobserved confounders may exist). Experiments with synthetic observational data show that our method can accurately sample from distributions over ancestral graphs and that we can greatly improve inference quality with human aid.            </div>
+          </div>
 
 
 		
       <div class="panel panel-default">
         <table style="width:100%">
           <tr>
-            <td class="panel-heading" role="tab" id="heading9">  
+            <td class="panel-heading" role="tab" id="heading10">  
 
 		    Meneguitti Dias, F., Ribeiro, E., <Strong>Ribeiro, A. H.</Strong>, Krieger, J., Antonio Gutierrez, M. (2023). Artificial Intelligence-Driven Screening System for Rapid Image-Based Classification of 12-Lead ECG Exams: A Promising Solution for Emergency Room Prioritization. <i> IEEE Access </i> <a href="https://doi.org/10.1109/ACCESS.2023.3328538" target="_blank">https://doi.org/10.1109/ACCESS.2023.3328538</a></td>
-          </tr> 
-        </table>
+        <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10"></a></td>
+      </tr> 
+    </table>
+    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+        <div class="panel-body">
+          The electrocardiogram (ECG) serves as a valuable diagnostic tool, providing crucial information about life-threatening cardiac conditions such as atrial fibrillation and myocardial infarction. A prompt and efficient assessment of ECG exams in environments such as Emergency Rooms (ERs) can significantly enhance the chances of survival for high-risk patients. Despite the presence of numerous works on ECG classification, most of these studies have concentrated on one-dimensional ECG signals, which are commonly found in publicly available ECG datasets. Nevertheless, the practical relevance of such methods is limited in hospital settings, where ECG exams are usually stored as images. In this study, we have developed an artificial intelligence-driven screening system specifically designed to analyze 12-lead ECG images. Our proposed method has been trained on an extensive dataset comprising 99,746 12-lead ECG exams collected from the ambulatory section of a tertiary hospital. The primary goal was to precisely classify the exams into three classes: Normal (N), Atrial Fibrillation (AFib), and Other (O). The evaluation of our approach yielded AUROC scores of 93.2%, 99.2%, and 93.1% for N, AFib, and O, respectively. To further validate our approach, we conducted evaluations using the 2018 China Physiological Signal Challenge (CPSC) database. In this evaluation, we achieved AUROC scores of 91.8%, 97.5%, and 70.4% for the classes N, AFib, and O, respectively. Additionally, we assessed our method using 1,074 exams acquired in the ER and obtained AUROC values of 98.3%, 98.0%, and 97.7% for the classes N, AFib, and O, respectively. Furthermore, we developed and deployed a system with a trained model within the ER of a tertiary hospital for research purposes. This system automatically retrieves newly captured ECG chart images from the Picture Archiving and Communication System (PACS) within the ER. These images undergo necessary preprocessing steps and serve as input for our proposed classification method. This comprehensive approach established an efficient and versatile end-to-end framework for ECG classification. The results of our study highlight the potential of leveraging artificial intelligence in the screening of ECG exams, offering a promising solution for the rapid assessment and prioritization of patients in the ER.
+        </div>
        </div>
 
       <div class="panel panel-default">
