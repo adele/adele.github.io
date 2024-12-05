@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Adele Ribeiro's Personal Webpage">
-  <meta name="keywords" content="causal inference, CV, data science, AI, healthcare, deep learning, adele, helena, ribeiro">
+  <meta name="keywords" content="causal inference, causal discovery, causality, CV, data science, AI, healthcare, public health, deep learning, adele, helena, ribeiro">
 	<meta name="author" content="Adèle H. Ribeiro">
 
 	<title>Adèle H. Ribeiro</title>
@@ -93,15 +93,16 @@
               
                 <p><h4>Adèle Helena Ribeiro</h4>
                 <span>Postdoctoral Researcher</span><br>
-                <span>Causal AI Lab, Columbia University</span><br>
-                <a class="email" href="adele@cs.columbia.edu">adele@cs.columbia.edu</a>
+                <span>Data Science in Biomedicine</span><br>
+		<span>Philipps-Universit&auml;t Marburg</span><br>
+                <a class="email" href="mailto:adele.ribeiro@uni-marburg.de">adele.ribeiro@uni-marburg.de</a>
              </div>   
           </div> <!-- col-md-4 -->
 
           <div class="col-md-8 col-md-pull-4">
             <div class="short-info wow fadeInUp" >
               <h3>About me</h3>
-              <p  align="justify"> I am a postdoc in Dominik Heider's research group at Philipps-Universität Marburg, Germany. Previously, I worked with Elias Bareinboim as a postdoc in the Causal AI Lab at Columbia University, USA. My research lies at the intersection of Computer Science, Statistics, and Artificial Intelligence in Healthcare. My efforts are focused on advancing the theory of causal inference and learning for discovering, generalizing, and personalizing cause-effect relationships from multiple observational and experimental data collections. I am also interested in the development and application of machine learning and AI tools equipped with causal and counterfactual reasoning for more fair, explainable, scalable, reliable, and personalized decision-making. I have a particular interest in applications in the Health Sciences and have directed my research towards addressing challenges that emerge in such domains to help bridge the gap between theory and practical applications. </p>
+              <p  align="justify"> I am a postdoc in Dominik Heider's research group at Philipps-Universität Marburg and a visiting researcher at Heinrich Heine University Düsseldorf, Germany. Previously, I worked with Elias Bareinboim as a postdoc in the Causal AI Lab at Columbia University, USA. My research lies at the intersection of Computer Science, Statistics, and Artificial Intelligence in Healthcare. My efforts are focused on advancing the theory of causal inference and learning for discovering, generalizing, and personalizing cause-effect relationships from multiple observational and experimental data collections. I am also interested in the development and application of machine learning and AI tools equipped with causal and counterfactual reasoning for more fair, explainable, scalable, reliable, and personalized decision-making. I have a particular interest in applications in the Health Sciences and have directed my research towards addressing challenges that emerge in such domains to help bridge the gap between theory and practical applications. </p>
 
             </div>
 
@@ -420,15 +421,121 @@
     
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading11">  
+		da Silva, T., Silva, E., <Strong>Ribeiro, A. H.</Strong>, Góis, A., Heider, D., Kaski, S. and Mesquita, D., (2023). Human-in-the-Loop Causal Discovery under Latent Confounding using Ancestral GFlowNets. <i> arXiv preprint arXiv:2309.12032 </i> <a href="https://arxiv.org/abs/2309.12032" target="_blank">(Link)</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+            <div class="panel-body">
+              Structure learning is the crux of causal inference. Notably, causal discovery (CD) algorithms are brittle when data is scarce, possibly inferring imprecise causal relations that contradict expert knowledge -- especially when considering latent confounders. To aggravate the issue, most CD methods do not provide uncertainty estimates, making it hard for users to interpret results and improve the inference process. Surprisingly, while CD is a human-centered affair, no works have focused on building methods that both 1) output uncertainty estimates that can be verified by experts and 2) interact with those experts to iteratively refine CD. To solve these issues, we start by proposing to sample (causal) ancestral graphs proportionally to a belief distribution based on a score function, such as the Bayesian information criterion (BIC), using generative flow networks. Then, we leverage the diversity in candidate graphs and introduce an optimal experimental design to iteratively probe the expert about the relations among variables, effectively reducing the uncertainty of our belief over ancestral graphs. Finally, we update our samples to incorporate human feedback via importance sampling. Importantly, our method does not require causal sufficiency (i.e., unobserved confounders may exist). Experiments with synthetic observational data show that our method can accurately sample from distributions over ancestral graphs and that we can greatly improve inference quality with human aid.            </div>
+          </div>
+        </div>
+
+		
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading10">  
+
+		    Meneguitti Dias, F., Ribeiro, E., <Strong>Ribeiro, A. H.</Strong>, Krieger, J., Antonio Gutierrez, M. (2023). Artificial Intelligence-Driven Screening System for Rapid Image-Based Classification of 12-Lead ECG Exams: A Promising Solution for Emergency Room Prioritization. <i> IEEE Access </i> <a href="https://doi.org/10.1109/ACCESS.2023.3328538" target="_blank">https://doi.org/10.1109/ACCESS.2023.3328538</a></td>
+        <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10"></a></td>
+      </tr> 
+    </table>
+    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+        <div class="panel-body">
+          The electrocardiogram (ECG) serves as a valuable diagnostic tool, providing crucial information about life-threatening cardiac conditions such as atrial fibrillation and myocardial infarction. A prompt and efficient assessment of ECG exams in environments such as Emergency Rooms (ERs) can significantly enhance the chances of survival for high-risk patients. Despite the presence of numerous works on ECG classification, most of these studies have concentrated on one-dimensional ECG signals, which are commonly found in publicly available ECG datasets. Nevertheless, the practical relevance of such methods is limited in hospital settings, where ECG exams are usually stored as images. In this study, we have developed an artificial intelligence-driven screening system specifically designed to analyze 12-lead ECG images. Our proposed method has been trained on an extensive dataset comprising 99,746 12-lead ECG exams collected from the ambulatory section of a tertiary hospital. The primary goal was to precisely classify the exams into three classes: Normal (N), Atrial Fibrillation (AFib), and Other (O). The evaluation of our approach yielded AUROC scores of 93.2%, 99.2%, and 93.1% for N, AFib, and O, respectively. To further validate our approach, we conducted evaluations using the 2018 China Physiological Signal Challenge (CPSC) database. In this evaluation, we achieved AUROC scores of 91.8%, 97.5%, and 70.4% for the classes N, AFib, and O, respectively. Additionally, we assessed our method using 1,074 exams acquired in the ER and obtained AUROC values of 98.3%, 98.0%, and 97.7% for the classes N, AFib, and O, respectively. Furthermore, we developed and deployed a system with a trained model within the ER of a tertiary hospital for research purposes. This system automatically retrieves newly captured ECG chart images from the Picture Archiving and Communication System (PACS) within the ER. These images undergo necessary preprocessing steps and serve as input for our proposed classification method. This comprehensive approach established an efficient and versatile end-to-end framework for ECG classification. The results of our study highlight the potential of leveraging artificial intelligence in the screening of ECG exams, offering a promising solution for the rapid assessment and prioritization of patients in the ER.
+        </div>
+       </div>
+
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading9">  
+
+	    Tajabadi, M, Grabenhenrich, L., <Strong>Ribeiro, A. H.</Strong>, Leyer, M., Heider D. (2023). Sharing Data With Shared Benefits: Artificial Intelligence Perspective. <i> J Med Internet Res 2023;25:e47540 </i> <a href="https://www.jmir.org/2023/1/e47540" target="_blank">(Link)</a></td>
+          <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+            <div class="panel-body">
+          Artificial intelligence (AI) and data sharing go hand in hand. In order to develop powerful AI models for medical and health applications, data need to be collected and brought together over multiple centers. However, due to various reasons, including data privacy, not all data can be made publicly available or shared with other parties. Federated and swarm learning can help in these scenarios. However, in the private sector, such as between companies, the incentive is limited, as the resulting AI models would be available for all partners irrespective of their individual contribution, including the amount of data provided by each party. Here, we explore a potential solution to this challenge as a viewpoint, aiming to establish a fairer approach that encourages companies to engage in collaborative data analysis and AI modeling. Within the proposed approach, each individual participant could gain a model commensurate with their respective data contribution, ultimately leading to better diagnostic tools for all participants in a fair manner.
+            </div>
+        </div>
+       </div>
+       
+
+<div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading8">Anand, T. V.*, <Strong>Ribeiro, A. H.*</Strong>, Tian, J. , Bareinboim, E. (2023). Causal Effect Identification in Cluster DAGs.<i> In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-23) </i>, 37(10), 12172-12179. <a href="https://doi.org/10.1609/aaai.v37i10.26435" target="_blank">https://doi.org/10.1609/aaai.v37i10.26435</a>  -- Selected for <a href="https://doi.org/10.48448/k4gf-7p67" target="_blank"> Oral Presentation </a> </td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+            <div class="panel-body">
+            Reasoning about the effect of interventions and counterfactuals is a fundamental task found throughout the data sciences.
+A collection of principles, algorithms, and tools has been developed
+for performing such tasks in the last decades (Pearl, 2000). One of the pervasive requirements found throughout
+this literature is the articulation of assumptions, which commonly
+appear in the form of causal diagrams. Despite the
+power of this approach, there are significant settings where
+the knowledge necessary to specify a causal diagram over
+all variables is not available, particularly in complex, high-dimensional
+domains. In this paper, we introduce a new graphical modeling tool called cluster DAGs (for short, CDAGs)
+that allows for the partial specification of relationships
+among variables based on limited prior knowledge, alleviating
+the stringent requirement of specifying a full causal
+diagram. A C-DAG specifies relationships between clusters
+of variables, while the relationships between the variables
+within a cluster are left unspecified, and can be seen as a
+graphical representation of an equivalence class of causal diagrams
+that share the relationships among the clusters. We
+develop the foundations and machinery for valid inferences
+over C-DAGs about the clusters of variables at each layer of
+Pearl’s Causal Hierarchy (Pearl and Mackenzie 2018; Bareinboim
+et al. 2020) - L1 (probabilistic), L2 (interventional), and
+L3 (counterfactual). In particular, we prove the soundness
+and completeness of d-separation for probabilistic inference
+in C-DAGs. Further, we demonstrate the validity of Pearl’s
+do-calculus rules over C-DAGs and show that the standard
+ID identification algorithm is sound and complete to systematically
+compute causal effects from observational data given
+a C-DAG. Finally, we show that C-DAGs are valid for performing
+counterfactual inferences about clusters of variables.
+		</div>
+          </div>
+       </div>
+
+
 
         <div class="panel panel-default">
         <table style="width:100%">
           <tr>
-            <td class="panel-heading" role="tab" id="heading5">Jaber, A.*, <Strong>Ribeiro, A. H.*</Strong>, Zhang, J., Bareinboim, E. (2022). Causal Identification under Markov equivalence: Calculus, Algorithm, and Completeness.<i> In Proceedings of the 36th Annual Conference on Neural Information Processing Systems (NeurIPS-22).</i> <a href="https://causalai.net/r86a.pdf" target="_blank"> (Preprint) </a></td>
-            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"></a></td>
+            <td class="panel-heading" role="tab" id="heading7">
+		    Mundt, M., Cooper, K.W., Dhami, D.S., <Strong>Ribeiro, A. H.</Strong>, Smith, J.S., Bellot A., Hayes, T. (2023) Continual Causality: A Retrospective of the Inaugural AAAI-23 Bridge Program.<i> Proceedings of The First AAAI Bridge Program on Continual Causality, PMLR 208:1-10 </i>. <a href="https://proceedings.mlr.press/v208/mundt23a.html" target="_blank">(Link)</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7"></a></td>
           </tr> 
         </table>
-        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+		<div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+            <div class="panel-body">
+              Both of the fields of continual learning and causality investigate complementary aspects of human cognition and are fundamental components of artificial intelligence if it is to reason and generalize in complex environments. Despite the burgeoning interest in investigating the intersection of the two fields, it is currently unclear how causal models may describe continuous streams of data and vice versa, how continual learning may exploit learned causal structure. We proposed to bridge this gap through the inaugural AAAI-23 “Continual Causality” bridge program, where our aim was to take the initial steps towards a unified treatment of these fields by providing a space for learning, discussions, and to build a diverse community to connect researchers. The activities ranged from traditional tutorials and software labs, invited vision talks, and contributed talks based on submitted position papers, as well as a panel and breakout discussions. Whereas materials are publicly disseminated as a foundation for the community: https://www.continualcausality.org, respectively discussed ideas, challenges, and prospects beyond the inaugural bridge are summarized in this retrospective paper.
+            </div>
+          </div>
+       </div>
+
+
+        <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading6">Jaber, A.*, <Strong>Ribeiro, A. H.*</Strong>, Zhang, J., Bareinboim, E. (2022). Causal Identification under Markov equivalence: Calculus, Algorithm, and Completeness.<i> In Advances in Neural Information Processing Systems, 35, 3679-3690. (NeurIPS-22).</i> <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/17a9ab4190289f0e1504bbb98d1d111a-Abstract-Conference.html" target="_blank"> (Link) </a> -- Highlighted Paper (<2%, out of 10,411).</td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
             <div class="panel-body">
               One common task in many data sciences applications is to answer questions about
 the effect of new interventions, like: what would happen to Y if we make X equal
@@ -451,35 +558,20 @@ Third, we prove the proposed calculus to be complete for the same task.
             </div>
           </div>
        </div>
-       
-            <div class="panel panel-default">
+  
+        <div class="panel panel-default">
         <table style="width:100%">
           <tr>
-            <td class="panel-heading" role="tab" id="heading5"><Strong>Ribeiro, A. H.</Strong>, Bareinboim, E. (2022). Causal Inference and Data Fusion: Towards an Accelerated Process of Scientific Discovery.<i> OECD-22. Organisation for Economic Co-operation and Development, Volume “AI and the productivity of science” </i>. forthcoming.<i> Columbia CausalAI Laboratory. </i> <a href="https://causalai.net/r73.pdf" target="_blank">Technical Report (R-73) </td>
+            <td class="panel-heading" role="tab" id="heading5"><Strong>Ribeiro, A. H.</Strong>, Bareinboim, E. (2022). Causal Inference and Data Fusion: Towards an Accelerated Process of Scientific Discovery.<i> OECD-22. Organisation for Economic Co-operation and Development, Volume “AI and the productivity of science” </i> <a href="https://causalai.net/r73.pdf" target="_blank"> (Link) </td>
           </tr> 
         </table>
        </div>
 
-        
-        <div class="panel panel-default">
-        <table style="width:100%">
-          <tr>
-            <td class="panel-heading" role="tab" id="heading5">Anand, T. V.*, <Strong>Ribeiro, A. H.*</Strong>, Tian, J. , Bareinboim, E. (2021). Effect Identification in Cluster Causal Diagrams.<i> Columbia CausalAI Laboratory. </i> <a href="https://causalai.net/r77.pdf" target="_blank">Technical Report (R-77)</a> arXiv preprint <a target="_blank" href="https://doi.org/10.48550/arXiv.2202.12263"> arXiv:2202.12263</a> </td>
-            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"></a></td>
-          </tr> 
-        </table>
-        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-            <div class="panel-body">
-              One pervasive task found throughout the empirical sciences is to determine the effect of interventions  from non-experimental data. It is well-understood that assumptions are necessary to perform such causal inferences, an idea popularized through Cartwright's motto: "no causes-in, no causes-out." One   way of articulating these assumptions is through the use of causal diagrams, which are a special type of graphical model with causal semantics [Pearl, 2000]. The graphical approach has been applied successfully in many settings, but there are still challenges to its use,  particularly in complex,  high-dimensional domains. In medicine, for example,  background knowledge may exist about the relationships among a subset of variables, but usually not all of them. In this paper, we introduce <i>cluster causal diagrams</i> (for short, C-DAGs) to allow for the representation of partial understanding of the relationships among variables, which has the potential of alleviating  DAGs' somewhat stringent requirements. C-DAGs provide a simple yet effective way to partially abstract a grouping of variables among which causal relationships are not fully understood. Our goal is to develop machinery to reason on top of C-DAG's new representation. In particular, we first define a new version of the d-separation criterion, and prove its soundness and completeness. Second, we extend these new separation rules and prove the validity of the corresponding do-calculus. Lastly, we show that a standard identification algorithm can systematically compute causal effects from observational data with cluster causal diagrams.
-            </div>
-          </div>
-       </div>
-       
       <div class="panel panel-default">
         <table style="width:100%">
           <tr>
             <td class="panel-heading" role="tab" id="heading5a">  
-            Dias, F. M., Samesima, N., <Strong>Ribeiro, A.</Strong>, Moreno, R. A., Pastore, C. A., Krieger, J. E., and Gutierrez,M. A. (2021). 2D Image-Based Atrial Fibrillation Classification. <i>In 2021 Computing in Cardiology (CinC),</i> volume 48, pages 1–4. IEEE. <a href="https://doi.org/10.23919/CinC53138.2021.9662735" target="_blank">https://doi.org/10.23919/CinC53138.2021.9662735</a></td>
+            Dias, F. M., Samesima, N., <Strong>Ribeiro, A. H.</Strong>, Moreno, R. A., Pastore, C. A., Krieger, J. E., and Gutierrez,M. A. (2021). 2D Image-Based Atrial Fibrillation Classification. <i>In 2021 Computing in Cardiology (CinC),</i> volume 48, pages 1–4. IEEE. <a href="https://doi.org/10.23919/CinC53138.2021.9662735" target="_blank">https://doi.org/10.23919/CinC53138.2021.9662735</a></td>
             <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5a" aria-expanded="false" aria-controls="collapse5a"></a></td>
           </tr> 
         </table>
@@ -610,6 +702,20 @@ Suppose we identify G-causality between the graph models' parameters. In that ca
     
         <div class="panel-group" id="accordion-libraries" role="tablist" aria-multiselectable="true">
        
+          <div class="panel panel-default">
+            <table style="width:100%">
+              <tr>
+                <td class="panel-heading" role="tab" id="heading3-libraries"><Strong>Ribeiro, A. H.</Strong> (2019). PAGId: an R package for causal effect identification in Partial Ancestral Graphs. <a href="https://github.com/adele/PAGId" target="_blank">https://github.com/adele/PAGId</a> </td>
+                <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-libraries" data-target="#collapse3-libraries" aria-expanded="false" aria-controls="collapse3-libraries"></a></td>
+              </tr> 
+            </table>
+            <div id="collapse3-libraries" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3-libraries">
+                <div class="panel-body">
+                  This package implements the CIDP and IDP algorithms for identifying (conditional) causal effects from a Partial Ancentral Graph (PAG). Technical details are provided in the NeurIPS 2022 paper by Jaber A., Ribeiro A. H., Zhang J., and Bareinboim E., (2022) entitled "Causal Identification under Markov equivalence: Calculus, Algorithm, and Completeness".
+                 </div>
+              </div>
+           </div>
+
       <div class="panel panel-default">
         <table style="width:100%">
           <tr>
@@ -789,6 +895,93 @@ carbonatação e a maturação. Considerando os resultados preliminares obtidos 
     <div class="list-info wow fadeInUp">
       
       <table class="table-borderless" style="width:100%">
+        <tr>
+          <td style="vertical-align:top"> Jan 2024 </td>
+          <td> <a target="_blank" href="https://probabilistic.ai/"> Tropical Probabilistic AI School - Tropical ProbAI 2024</a>  <br>
+            3-hour Tutorial <br>
+            Hosted with the EMAp FGV Summer School on Data Science 2024, Rio de Janeiro, Brazil <br>
+            <a target="_blank" href="https://github.com/adele/Causality-Tutorial"> Tutorial on GitHub. </a><br>
+            <i> <strong>Ribeiro, A. H.</strong>. Introduction to Causal Inference. </i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Aug 2023 </td>
+          <td> <a target="_blank" href="https://emap.fgv.br/en/event/recent-advances-causal-inference-under-limited-domain-knowledge/"> Seminar at FGV EMAp  </a> <br>
+            Invited Talk <br>
+            School of Applied Mathematics of Getulio Vargas Foundation (FGV EMAp), Rio de Janeiro, Brazil. <br>
+            <i> <strong>Ribeiro, A. H.</strong> Recent Advances in Causal Inference under Limited Domain Knowledge. </i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Jul 2023 </td>
+          <td> <a target="_blank" href="https://essai.si/machines-climbing-pearls-ladder-of-causation/"> European Summer School on Artificial Intelligence - ESSAI 2023 </a>  <br>
+            5-day Course <br>
+            Faculty of Computer and Information Science, University of Ljubljana, Slovenia <br>
+            <i> <strong>Ribeiro, A. H.</strong>, Dhami, D., and Zecevic, M. Machines Climbing Pearl's Ladder of Causation. </i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Jul 2023 </td>
+          <td> <a target="_blank" href="https://www.youtube.com/watch?v=VA8vzmfnhyk"> 13rd Lisbon Machine Learning School - LxMLS 2023</a>  <br>
+            3-hour Tutorial <br>
+            Instituto Superior Técnico, Lisbon, Portugal <br>
+            <i> <strong>Ribeiro, A. H.</strong>. Causality and its Role in Reasoning, Explainability, and Generalizability. </i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Jun 2023 </td>
+          <td> <a target="_blank" href="https://probabilistic.ai/"> Nordic Probabilistic AI School - ProbAI 2023</a>  <br>
+            3-hour Tutorial <br>
+            Norwegian University of Science and Technology (NTNU), Trondheim, Norway <br>
+            <a target="_blank" href="https://github.com/probabilisticai/probai-2023/tree/main/day_5"> Tutorial on GitHub. </a><br>
+            <i> <strong>Ribeiro, A. H.</strong>. Causal Inference: Towards Explainable, Generalizable, and Trustworthy AI. </i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Apr 2023 </td>
+          <td> <a target="_blank" href="https://crl-tuebingen-2023.github.io/speakers/"> Workshop on Causal Representation Learning </a>  <br>
+            Invited Talk <br>
+            Max Planck Institute for Intelligent Systems, Tübingen, Germany <br>
+            <i> <strong>Ribeiro, A. H.</strong>. Effect Identification in Cluster Causal Diagrams.</i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Feb 2023 </td>
+          <td> <a target="_blank" href="https://aaai-23.aaai.org/bridge-program-cfps/"> Continual Causality - Bridge Program at AAAI-2023 </a>  <br>
+            90-min Tutorial <br>
+            Walter E. Washington Convention Center, Washington DC, USA <br>
+            <i> <strong>Ribeiro, A. H.</strong>. <a target="_blank" href="https://www.continualcausality.org/program/"> Putting the Causality in Continual Causality. </a>  </i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Aug 2022 </td>
+          <td> DAAD Postdoc-NeT-AI Tour, Germany <br>
+            Invited Talks <br>
+            Institute of Information Systems &amp;  Institute for Medical Biometrics and Statistics at the University of Lübeck; <br>
+            Institute for Computational Systems Biology at the University of Hamburg;<br>
+            Centre for Cognitive Science at TU Darmstadt;<br>
+            Center for Systems Biology and Department of Computer Science at TU Dresden; and<br>
+            Helmholtz Center Munich <br>
+            <i> <strong>Ribeiro, A. H.</strong>. Causal Inference from Observational Data in Partially Understood Domains. </i>
+          </td>
+        </tr> 
+
+        <tr>
+          <td style="vertical-align:top"> Aug 2022 </td>
+          <td> <a target="_blank" href="https://twitter.com/Heiderlab/status/1562079688725614592?t=YzRaRbeaDXMn9LFjBFKSfQ&s=08"> Future Bioinformatics Workshop, Germany </a> <br>
+            Invited Talk <br>
+            <i> <strong>Ribeiro, A. H.</strong>. Causal AI: Towards Explainable, Generalizable, and Trustworthy Decision-Making. </i>
+          </td>
+        </tr> 
+
+
           <tr>
             <td style="vertical-align:top"> Jul 2022 </td>
             <td> <a target="_blank" href="http://lxmls.it.pt/2022/index.html#schedule"> 12th Lisbon Machine Learning Summer School (LxMLS - 2022) </a> <br>
@@ -983,6 +1176,24 @@ carbonatação e a maturação. Considerando os resultados preliminares obtidos 
     <div class="container">
       <h2 class="section-title wow fadeInUp">Teaching</h2>
       
+    <div class="list-info wow fadeInUp">
+      <h3>Lecturer </h3>
+    
+      <table class="table-borderless" style="width:100%">
+        <tr>
+          <td style="vertical-align:top"> Oct 2023 - Feb 2024 </td>
+          <td> Department of Computer Science, Heinrich Heine University of Düsseldorf, Germany<br>
+            <i>Causality.</i>
+          </td>
+        </tr>    
+      <tr>
+        <td style="vertical-align:top"> Mar 2023 - Oct 2023 </td>
+        <td> Department of Mathematics and Computer Science, Phillips University of Marburg, Germany<br>
+          <i>Causal Data Science: Theoretical Foundations and Algorithms.</i>
+        </td>
+      </tr>         
+    </table>
+  </div>  
       
     <div class="list-info wow fadeInUp">
     <h3>Assistant Professor </h3>
