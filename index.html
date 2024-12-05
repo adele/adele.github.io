@@ -460,6 +460,20 @@
           <table style="width:100%">
             <tr>
               <td class="panel-heading" role="tab" id="heading11">  
+              da Silva, T., Silva, E., Góis, A., Heider, D., Kaski, S. and Mesquita, D., <Strong>Ribeiro, A. H.</Strong> (2024). Human-in-the-Loop Causal Discovery under Latent Confounding using Ancestral GFlowNets. <i> arXiv preprint arXiv:2309.12032 </i> <a href="https://arxiv.org/abs/2309.12032" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+              <div class="panel-body">
+                Structure learning is the crux of causal inference. Notably, causal discovery (CD) algorithms are brittle when data is scarce, possibly inferring imprecise causal relations that contradict expert knowledge -- especially when considering latent confounders. To aggravate the issue, most CD methods do not provide uncertainty estimates, making it hard for users to interpret results and improve the inference process. Surprisingly, while CD is a human-centered affair, no works have focused on building methods that both 1) output uncertainty estimates that can be verified by experts and 2) interact with those experts to iteratively refine CD. To solve these issues, we start by proposing to sample (causal) ancestral graphs proportionally to a belief distribution based on a score function, such as the Bayesian information criterion (BIC), using generative flow networks. Then, we leverage the diversity in candidate graphs and introduce an optimal experimental design to iteratively probe the expert about the relations among variables, effectively reducing the uncertainty of our belief over ancestral graphs. Finally, we update our samples to incorporate human feedback via importance sampling. Importantly, our method does not require causal sufficiency (i.e., unobserved confounders may exist). Experiments with synthetic observational data show that our method can accurately sample from distributions over ancestral graphs and that we can greatly improve inference quality with human aid.            </div>
+            </div>
+          </div>
+
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading11">  
                 da Silva, T., Silva, E., Góis, A., Heider, D., Kaski, S. and Mesquita, D., <Strong>Ribeiro, A. H.</Strong> (2024). Human-Aided Discovery of Ancestral Graphs. 
                 <i> LXAI Workshop at Neural Information Processing Systems (NeurIPS 2024) </i> <a href="https://openreview.net/pdf?id=PVOpWUJORs" target="_blank">(Link)</a></td>
               <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11"></a></td>
@@ -493,21 +507,26 @@
                 Cardiometabolic diseases, a leading global health concern, arise from a complex interplay of lifestyle choices, genetic predispositions, and biochemical markers. Although extensive research has uncovered strong associations among various risk factors and these diseases, grasping their causal relationships is vital for gaining deeper mechanistic insights and designing effective prevention and intervention strategies. We address this gap by introducing anchorFCI, a novel adaptation of the conservative Really Fast Causal Inference (RFCI) algorithm designed to enhance the discovery of causal relationships by strategically selecting and integrating reliable anchor variables from an additional set known not to be caused by the variables of interest. This approach is particularly well-suited for learning causal networks involving phenotypic, clinical, and sociodemographic factors, leveraging genetic variables recognized as not being influenced by these factors. By integrating these anchor variables along with knowledge of their non-ancestral relationships, anchorFCI effectively handles latent confounding while enhancing both robustness and discovery power. We demonstrate its effectiveness using data from the 2015 ISA-Nutrition study in São Paulo, Brazil, and further estimate the effect sizes of the uncovered causal relationships with state-of-the-art tools from Judea Pearl's framework, presenting a fully data-driven causal inference pipeline. The results not only support many established causal relationships but also elucidate their interconnections within a complex network, enhancing our understanding of the broader dynamics and the multifaceted nature of cardiometabolic risk.</div>
             </div>
           </div>
-          
 
-      <div class="panel panel-default">
-        <table style="width:100%">
-          <tr>
-            <td class="panel-heading" role="tab" id="heading11">  
-		        da Silva, T., Silva, E., Góis, A., Heider, D., Kaski, S. and Mesquita, D., <Strong>Ribeiro, A. H.</Strong> (2024). Human-in-the-Loop Causal Discovery under Latent Confounding using Ancestral GFlowNets. <i> arXiv preprint arXiv:2309.12032 </i> <a href="https://arxiv.org/abs/2309.12032" target="_blank">(Link)</a></td>
-            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11"></a></td>
-          </tr> 
-        </table>
-        <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
-            <div class="panel-body">
-              Structure learning is the crux of causal inference. Notably, causal discovery (CD) algorithms are brittle when data is scarce, possibly inferring imprecise causal relations that contradict expert knowledge -- especially when considering latent confounders. To aggravate the issue, most CD methods do not provide uncertainty estimates, making it hard for users to interpret results and improve the inference process. Surprisingly, while CD is a human-centered affair, no works have focused on building methods that both 1) output uncertainty estimates that can be verified by experts and 2) interact with those experts to iteratively refine CD. To solve these issues, we start by proposing to sample (causal) ancestral graphs proportionally to a belief distribution based on a score function, such as the Bayesian information criterion (BIC), using generative flow networks. Then, we leverage the diversity in candidate graphs and introduce an optimal experimental design to iteratively probe the expert about the relations among variables, effectively reducing the uncertainty of our belief over ancestral graphs. Finally, we update our samples to incorporate human feedback via importance sampling. Importantly, our method does not require causal sufficiency (i.e., unobserved confounders may exist). Experiments with synthetic observational data show that our method can accurately sample from distributions over ancestral graphs and that we can greatly improve inference quality with human aid.            </div>
+
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading11">  
+                Leite, J. M. R., <Strong>Ribeiro, A. H.</Strong>, Pereira, J. L., de Souza, C. A., Heider, D., ... & Sarti, F. M. (2024). Missense genetic variants in major bitter taste receptors are associated with diet quality and food intake in a highly admixed underrepresented population. 
+                <i> Clinical Nutrition ESPEN. </i> <a href= "https://doi.org/10.1016/j.clnesp.2024.06.045" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+              <div class="panel-body">
+                To investigate associations between Single Nucleotide Polymorphisms (SNPs) in the TAS1R and TAS2R taste receptors and diet quality, intake of alcohol, added sugar, and fat, using linear regression and machine learning techniques in a highly admixed population.
+                In the ISA-Capital health survey, 901 individuals were interviewed and had socioeconomic, demographic, health characteristics, along with dietary information obtained through two 24-h recalls. Data on 12 components related to food groups, nutrients, and calories was combined into a diet quality score (BHEI-R). BHEI-R, SoFAAs (calories from added sugar, saturated fat, and alcohol) and Alcohol use were tested for associations with 255 TAS2R SNPs and 73 TAS1R SNPs for 637 individuals with regression analysis and Random Forest. 
+                Significant SNPs were combined into Genetic taste scores (GTSs).
+                Among 23 SNPs significantly associated either by stepwise linear/logistic regression or random forest with any possible biological functionality, the missense variants rs149217752 in TAS2R40, for SoFAAs, and rs2233997 in TAS2R4, were associated with both BHEI-R (under 4% increase in Mean Squared Error) and SoFAAs. GTSs increased the variance explanation of quantitative phenotypes and there was a moderately high AUC for alcohol use.
+                The study provides insights into the genetic basis of human taste perception through the identification of missense variants in the TAS2R gene family. These findings may contribute to future strategies in precision nutrition aimed at improving food quality by reducing added sugar, saturated fat, and alcohol intake.
+             </div>
           </div>
-        </div>
 
 		
       <div class="panel panel-default">
