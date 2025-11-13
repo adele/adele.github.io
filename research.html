@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Web Fonts 
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Adele Ribeiro's Personal Webpage">
+  <meta name="keywords" content="causal inference, causal discovery, causality, CV, data science, AI, healthcare, public health, deep learning, adele, helena, ribeiro">
+	<meta name="author" content="Adèle H. Ribeiro">
+
+	<title>CausalAI4Health</title>
+
+  <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- Magnific css -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+	<!-- Custom styles CSS -->
+	<!-- <link href="assets/css/accordion.css" rel="stylesheet" media="screen">  -->
+  <!-- Responsive CSS -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="shortcut icon" href="">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+  
+  <!--
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  -->
+  
+</head>
+
+<body>
+  
+  <!-- Navigation -->
+	<header class="header">
+		<nav class="navbar navbar-custom" role="navigation">
+		      <div class="container-fluid">
+		      
+		      
+		      <!-- BRAND -->
+          <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+          
+          <span class="sr-only">Toggle navigation</span>
+          </button>
+          
+         <!-- vertical-align: sub  -->
+            
+          <a class="navbar-brand" href="#about">
+            <h1 style="padding-left:15px;">
+            <span>C</span><span style="font-size: 2.8rem;">ausal</span><span>AI</span><span 
+            style="font-size: 2.8rem;">4</span><span>H</span><span 
+            style="font-size: 2.8rem;">ealth</span>
+          </h1>
+
+          </div>
+		      
+		     
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- <li><a href="#about">About</a></li> -->
+						<li><a href="#about">About</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<li><a href="#libraries">Libraries</a></li>
+					</ul>
+				</div>
+		</nav>
+		<script>
+    window.location = "#about";
+  </script>
+	</header><!-- End Navigation -->
+	
+
+	 <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">About Us</h2>
+
+        <div class="row">
+
+            <div class="short-info wow fadeInUp" >
+              <p  align="justify">
+              We are <a href="#about"><strong>CausalAI4Health</strong></a> (Causal Artificial Intelligence for Health),
+              a research group pushing the frontiers of computational and statistical methods to uncover 
+              and quantify causal mechanisms in complex biomedical systems. Supported by the 
+              <i>Federal Ministry of Research, Technology and Space (BMFTR)</i>  of Germany, the group is led by 
+              <a href="index.html" target="_blank"><strong>Dr. Adèle Helena Ribeiro</strong></a> and is based at the
+              <a href="https://www.medizin.uni-muenster.de/imi/das-institut.html" target="_blank">
+                <strong>Institute of Medical Informatics, University of Münster</strong></a>.
+              </p>
+              <p  align="justify">
+              While most AI methods excel at pattern recognition and prediction,
+              true scientific insight requires understanding the effects of interventions,
+              revealing not only why systems behave as they do, but also how
+              we can act on them to achieve desired outcomes.
+              </p>
+              <p  align="justify">
+              Our mission is to develop algorithms and theoretical tools that <strong>enable AI to reason causally,
+              even when data are imperfect, influenced by multiple and possibly hidden sources of variation, 
+              distributed across institutions, and high dimensional.</strong>
+              </p>
+              <p  align="justify">
+              A central challenge is that real-world biomedical datasets rarely 
+              satisfy standard methodological assumptions. They may involve 
+              latent confounding, selection bias, multimodal and heterogeneous data sources,
+              dependencies among observational units, strict privacy constraints, and
+              limited sample sizes relative to dimensionality.
+              If these challenges are not rigorously addressed, 
+              causal analysis may yield conclusions that are misleading,
+              nongeneralizable, or irreproducible.
+              </p>
+              <p>To address these challenges, our research focuses on developing 
+              robust, data-efficient, and privacy-preserving methods for causal discovery
+              as well as causal effect identification and estimation. These methods are designed to:</p>
+              
+    
+              <div style="display:flex;justify-content:center;">
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1200px;">
+                  <div style="flex:1 1 350px; max-width:380px; background:#ffffff; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.05); padding:20px;">
+                    <h3 style="font-size:1.1em; color: #0670b8;">Robust Causal Learning</h3>
+                    <p>Learn reliable causal relationships despite hidden confounders and limited samples.</p>
+                  </div>
+                  <div style="flex:1 1 350px;max-width:380px;background:#ffffff;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.05);padding:20px;">
+                    <h3 style="font-size:1.1em; color: #0670b8;">Uncertainty Quantification</h3>
+                    <p>Provide statistically valid and trustworthy conclusions with uncertainty estimates.</p>
+                  </div>
+                  <div style="flex:1 1 350px;max-width:380px;background:#ffffff;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.05);padding:20px;">
+                    <h3 style="font-size:1.1em; color: #0670b8;">Expert Knowledge Integration</h3>
+                    <p>Integrate expert knowledge while accounting for uncertainty and conflicts.</p>
+                  </div>
+                  <div style="flex:1 1 350px;max-width:380px;background:#ffffff;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.05);padding:20px;">
+                    <h3 style="font-size:1.1em; color: #0670b8;">Collaborative Analysis</h3>
+                    <p>Enable multi-institution research without sharing sensitive data.</p>
+                  </div>
+                  <div style="flex:1 1 350px;max-width:380px;background:#ffffff;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.05);padding:20px;">
+                    <h3 style="font-size:1.1em; color: #0670b8;">High-Dimensional Scaling</h3>
+                    <p>Handle complex data structures across multiple modalities efficiently.</p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <p> Our ongoing applications include public health and clinical research in malaria, 
+              mental health, cardiovascular diseases, post acute infection syndromes including long COVID, and cancer. 
+              In each of these domains, causal insights have the potential to <strong>improve mechanistic understanding
+              and inform targeted prevention, diagnosis, and treatment strategies.</strong></p> 
+
+              <p> By addressing core challenges in causal inference such as reliability, heterogeneity, privacy,
+              knowledge integration, and scalability, our research contributes to the development of 
+              <strong>explainable, trustworthy, and actionable AI for biomedical discovery and precision health.</strong></p>
+
+            </div>
+
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section><!-- End About Section -->
+
+	
+	
+
+<!-- Team Section -->
+<section id="team" class="section section-padding">
+    <div class="container">
+      
+    <h2 class="section-title wow fadeInUp">Our Team</h2>
+          
+  <!-- 
+  <div class="row text-center">
+      <div class="col-xs-12">
+        <p class="lead">Our multidisciplinary team driving innovation in AI and healthcare.</p>
+      </div>
+    </div>
+ -->
+    
+  
+    <!-- Current Members -->
+   <div class="row" style="margin-top:30px;">
+
+     <h3 class="text-primary" style="margin-top: 30px; margin-bottom:20px; font-weight:700; font-size:1.5em; border-bottom: 3px solid #0670b8; padding-bottom:5px;">
+      Current Members
+    </h3>
+
+  <!-- Group Leader -->
+  <div style="border:1px solid #e6e6e6; border-left:4px solid #1a8cd9; border-radius:6px; padding:15px 18px; margin-bottom:12px;">
+    <p class="pull-right" style="font-size:0.9em;"><em>Group Leader</em></p>
+    <strong style="font-size:1.2em;"> <a href="index.html" target="_blank">Dr. Adèle Helena Ribeiro</a>  </strong>
+    <div style="color:#5a5a5a; margin-top:2px;"></div>
+    <p class="text-muted" style="margin:6px 0 0;">
+      Research focus: Advancing Causal and Explainable AI for Health and Life Sciences.
+    </p>
+  </div>
+  
+  <div style="border:1px solid #e6e6e6; border-left:4px solid #1a8cd9; border-radius:6px; padding:15px 18px; margin-bottom:12px;">
+    <p class="pull-right" style="font-size:0.9em;"><em>Ph.D. Student</em></p>
+    <strong style="font-size:1.2em;">Maximilian Hahn, M.Sc.  </strong>
+    <p class="text-muted" style="margin:6px 0 0;">
+      Research focus: Advancing Privacy-Preserving, Collaborative Causal AI in Real-World Settings.<br>
+      Co-advised with Prof. Dr. Dominik Heider, Institute of Medical Informatics, Universität Münster, Münster, Germany.
+    </p>
+  </div>
+  
+  <div style="border:1px solid #e6e6e6; border-left:4px solid #1a8cd9; border-radius:6px; padding:15px 18px; margin-bottom:12px;">
+    <p class="pull-right" style="font-size:0.9em;"><em>Ph.D. Student</em></p>
+    <strong style="font-size:1.2em;"> Azlaan Mustafa Samad, M.Sc. </strong>
+    <p class="text-muted" style="margin:6px 0 0;">
+      Research focus: Advancing Causal Representation Learning and Causal Abstraction in the Health Sciences.<br>
+      Co-advised with Prof. Dr. Wolfgang Nejdl, L3S Research Center, 
+      CAIMed (Lower Saxony Research Center for AI and Causal Methods in Medicine) &
+      Leibniz Universität Hannover, Hanover, Germany.
+    </p>
+  </div>
+  
+  <div style="border:1px solid #e6e6e6; border-left:4px solid #1a8cd9; border-radius:6px; padding:15px 18px; margin-bottom:12px;">
+    <p class="pull-right" style="font-size:0.9em;"><em>Ph.D. Student</em></p>
+    <strong style="font-size:1.2em;"> Matheus Becali Rocha, M.Sc. </strong>
+    <p class="text-muted" style="margin:6px 0 0;">
+      Research focus: Causal Discovery for More Interpretable and Generalizable Predictions.<br>
+      Co-advised with Prof. Dr. Renato Kroling, Department of Informatics, Federal University of Espírito Santo, Brazil.
+    </p>
+  </div>
+
+  <div style="border:1px solid #e6e6e6; border-left:4px solid #1a8cd9; border-radius:6px; padding:15px 18px; margin-bottom:12px;">
+    <p class="pull-right" style="font-size:0.9em;"><em>Master Student</em></p>
+    <strong style="font-size:1.2em;">Aaron Zumdick </strong>
+    <p class="text-muted" style="margin:6px 0 0;">
+      Research focus: Enabling Causal Discovery from Complex, Heterogeneous, and Non-IID Data.<br>
+      Co-advised with Prof. Dr. Peter Florian Stadler, Interdisciplinary Centre for Bioinformatics, Universität Leipzig, Leipzig, Germany.
+    </p>
+  </div>
+  
+  <div style="border:1px solid #e6e6e6; border-left:4px solid #1a8cd9; border-radius:6px; padding:15px 18px; margin-bottom:12px;">
+    <p class="pull-right" style="font-size:0.9em;"><em>Master Student</em></p>
+    <strong style="font-size:1.2em;">Bárbara Alexandra Alves Sequeira</strong>
+    <p class="text-muted" style="margin:6px 0 0;">
+      Research focus: Exploring Causal Discovery in Catalysis under Limited and Confounded Datasets.<br>
+      Co-advised with Prof. Dr. Pedro Freitas Mendes, Department of Chemical Engineering, Instituto Superior Técnico, Lisbon, Portugal.
+    </p>
+  </div>
+
+  
+  </div>
+  
+  
+</section> 
+
+
+
+	  <section id="projects" class="section section-padding">
+      <div class="container">
+        
+      <h2 class="section-title wow fadeInUp">Selected Research Projects</h2>
+    
+      <h3 class="text-primary" style="margin-top: 30px; margin-bottom:20px; font-weight:700; font-size:1.5em; border-bottom: 3px solid #0670b8; padding-bottom:5px;">
+        Method Development
+      </h3>
+
+      <!-- Project 1 -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+      <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 style="font-size:1.1em; color:#0670b8;">Uncertainty-Quantified Causal Discovery</h2>
+            <h3 style="font-size:0.8em; color:#0670b8;"><em>Ensuring Robustness Under Limited Data and Potential Violations of Faithfulness</em></h3>
+        </div>
+          <p style="text-align: justify; margin-top:20px;">
+            We develop robust causal discovery methods that address latent confounding, 
+            mixed variable types, and potential faithfulness violations,
+            while quantifying structural uncertainty to support reliable
+            downstream analyses such as effect estimation and intervention planning.
+          </p>
+          <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+            <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Data-Compatible Fast Causal Inference (dcFCI)</h4>
+            <p style="text-align: justify; margin:0;">
+            <a href="https://www.arxiv.org/abs/2505.06542" target="_blank">
+            dcFCI (Ribeiro & Heider, forthcoming)</a>
+            is a robust causal discovery algorithm that combines FCI-guided search with score-based evaluation. 
+            It rigorously handles latent confounders and heterogeneous variable types, 
+            resolves conflicts in edge orientation, and guarantees that only valid PAGs are produced. 
+            Additionally, it ranks alternative causal structures to provide a measure of structural uncertainty.
+            The <a href="https://github.com/adele/dcFCI" target="_blank">dcFCI R package</a> is publicly available on GitHub.
+            </p>
+          </div>
+          </div>
+        <!--<a class="pull-right" href="" download target="_blank"> <strong>Learn More</strong></a>-->
+        </div>
+      </div>
+      
+      
+      <!-- Project 2 -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+      <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 style="font-size:1.1em; color:#0670b8;">Expert-Guided Causal Discovery</h2>
+          <h3 style="font-size:0.8em; color:#0670b8;"><em>Integrating Expert Priors and Feedback Into Data-Driven Learning</em></h3>
+        </div>
+          <p style="text-align: justify; margin-top:20px;">
+            We develop methods that integrate expert knowledge into data-driven causal discovery, 
+            enhancing both the reliability and validity of learned models. 
+            By embedding expert insight into the learning process, 
+            our algorithms learn from data while remaining grounded in domain expertise.
+          </p>
+    <!-- Subproject 1: anchorFCI -->
+    <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+      <h4 style="color:#0670b8; text-transform:none; margin-bottom:6px;">Anchor Fast Causal Inference (anchorFCI)</h4>
+      <p style="text-align: justify; margin:0;">
+        <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2024.1436947/full" target="_blank">
+          anchorFCI (Ribeiro et al., 2025) </a>
+        extends the conservative FCI algorithm by selecting 
+        reliable anchor variables (those known not to be caused by others) and 
+        encoding their non-ancestral relationships. This is particularly useful 
+        for uncovering causal relationships among demographic or clinical traits  
+        using genetic variants as anchors. The 
+        <a href="https://github.com/adele/anchorFCI" target="_blank">anchorFCI R package</a> is available on GitHub.
+      </p>
+    </div>
+    <!-- Subproject 2: AGFN -->
+    <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:16px;">
+      <h4 style="color:#0670b8; text-transform:none; margin-bottom:6px;">Ancestral GFlowNet (AGFN)</h4>
+      <p style="text-align: justify; margin:0;">
+        <a href="https://arxiv.org/abs/2309.12032v3" target="_blank">AGFN (da Silva et al., ArXiv, forthcoming)</a>
+        is a a probabilistic, uncertainty-aware framework for causal discovery, 
+        equipped with an optimal elicitation strategy to guide expert interaction.
+        It infers a data-driven distribution over ancestral graphs and iteratively 
+        refines it through (potentially noisy) expert feedback. 
+        The <a href="https://github.com/ML-FGV/agfn" target="_blank">AGFN Python package</a> is available on GitHub.
+      </p>
+    </div>
+    </div>
+    </div>
+    </div>
+      <!-- 
+       <h2 style="font-size:1.1em; color:#0670b8;">Federated Causal Discovery</h2>
+       <h3 style="font-size:0.8em; color:#0670b8;"><em>Enabling Privacy-Preserving, Collaborative Learning Across Heterogeneous Centers</em></h3>
+      -->
+
+
+      <!-- Project 3 -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+      <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+       <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 style="font-size:1.1em; color:#0670b8;">Abtraction-Aware Causal Inference</h2>
+          <h3 style="font-size:0.8em; color:#0670b8;"><em>Enhancing Scalabiliy and Interpretability Through Variable Clustering</em></h3>
+        </div>
+          <p style="text-align: justify; margin-top:20px;">
+          In high-dimensional and complex settings, it is often more informative to represent causal models at a higher level of abstraction than the individual variables themselves.
+          By grouping related variables into clusters, we can simplify complex systems, highlight key causal relationships, and make inference more tractable.
+          </p>
+           <!-- Subproject 1 -->
+          <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+            <h4 style="color:#0670b8; text-transform:none; margin-bottom:6px;">Cluster Causal Diagrams (C-DAGs)</h4>
+            <p style="text-align: justify; margin:0;">
+              <a href="https://doi.org/10.1609/aaai.v37i10.26435" target="_blank">C-DAGs (Anand, et al. AAAI 2023)</a>
+              is a graphical framework for causal reasoning at a higher level of abstraction, enabling reliable causal inferences between clusters of variables without specifying the relationships within each cluster. 
+              Beyond formally defining C-DAGs, we have developed sound and complete methods for causal inference in this framework, supporting both interventional and counterfactual queries.           
+              Recently 
+              (Yvernes, et al., NeurIPS 2025), 
+              <!-- <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2024.1436947/full" target="_blank"><strong>(NeurIPS 2025)</strong></a> -->
+              we extended the C-DAG framework to support arbitrary variable clusterings by relaxing the partition admissibility constraint, thereby allowing cyclic C-DAG representations.
+            </p>
+          </div>
+          <!-- Subproject 2 -->
+          <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+            <h4 style="color:#0670b8; text-transform:none; margin-bottom:6px;"> Causal Learning Over Clusters (CLOC)</h4>
+            <p style="text-align: justify; margin:0;">
+              <a href="https://causalai.net/r128.pdf" target="_blank">CLOC (Anand, et. al, NeurIPS 2025)</a>
+              is a causal discovery algorithm designed to uncover relationships between clusters of variables in high-dimensional systems. 
+              It leverages a novel graphical framework to encode and learn cluster-level dependencies and independencies in Markov causal systems. 
+              The algorithm is sound and complete, providing a reliable representation of learnable causal relationships between clusters. 
+              The <a href="https://github.com/TaraAnand/CLOC" target="_blank">CLOC implementation in R</a> is available on GitHub.
+            </p>
+          </div>
+         </div>
+        </div>
+      </div>
+      
+      
+        <!-- Project 4s -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+      <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 style="font-size:1.1em; color:#0670b8;">Fully Data-Driven Causal Inference in Semi-Markovian Systems</h2>
+          <h3 style="font-size:0.8em; color:#0670b8;"><em>From Causal Discovery to Effect Identification and Estimation under Latent Confounding</em></h3>
+        </div>
+          <p style="text-align: justify; margin-top:20px;">
+          In general, a causal model cannot be uniquely determined from observational data alone.
+          However, causal discovery algorithms can partially recover it, defining a 
+          set of plausible models known as the Markov Equivalence Class (MEC). 
+          In Semi-Markovian Systems, where hidden confounders may exist, such a class
+          is typically represented as a Partial Ancestral Graph (PAG).
+          </p>
+           <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+            <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Conditional Causal Effect Identification from PAGs (CIDP)</h4>
+            <p style="text-align: justify; margin:0;">
+          We developed the first sound and complete calculus and algorithms for identifying (conditional) causal effects from PAGs
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/17a9ab4190289f0e1504bbb98d1d111a-Paper-Conference.pdf" target="_blank">(Jaber et al., NeurIPS 2022)</a>. 
+          Combined with causal discovery, this yields the first fully data-driven approach to causal inference, 
+          uncovering all identifiable effects directly from observational data. 
+          The CIDP algorithm is implemented in the 
+          <a href="https://github.com/adele/PAGId" target="_blank">PAGId R package</a> on GitHub.
+            </p>
+          </div>
+         </div>
+        </div>
+      </div>
+            
+     <h3 class="text-primary" style="margin-top: 30px; margin-bottom:20px; font-weight:700; font-size:1.5em; border-bottom: 3px solid #0670b8; padding-bottom:5px;">
+      Biomedical Applications
+    </h3>
+    
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+        <!--  <div style="flex:1 1 90%;max-width:200px;background:#ffffff;border-radius:16px;box-shadow:0 8px 25px rgba(0,0,0,0.1);padding:20px;display:flex;align-items:center;justify-content:center;min-width:280px;">
+          <img src="path_to_your_image.jpg" alt="Causal Discovery Illustration" style="width:auto;height:auto;border-radius:12px;"/>
+        </div> max-width:800px; -->
+      
+      <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 style="font-size:1.1em; color:#0670b8;">Deciphering the Multifaceted Causes of Malaria Risk in Amazonian Communities</h2>
+          <h3 style="font-size:0.8em; color:#0670b8;"><em>A Collaborative Approach Incorporating AI and Causality</em></h3>
+        </div>
+           <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+            <!-- <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Conditional Causal Effect Identification from PAGs (CIDP)</h4> -->
+
+
+          <p style="text-align: justify; margin-top:0px;">
+            Malaria remains a major health challenge, particularly in regions facing poverty, limited healthcare access, and harsh environments, such as the Amazon rainforest.
+          </p>
+          <p style="text-align: justify; margin-top:0px;">
+            By combining AI and causal inference, we can significantly advance malaria research by identifying context-specific risk factors, uncovering underlying causal mechanisms, and guiding more effective, targeted interventions.
+            <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2025.1599826/full" target="_blank">(Ribeiro, et al. 2025 Front. Genet.)</a>. 
+          </p>
+          <p style="text-align: justify; margin-top:0px;">
+            Supported by
+            <a href="https://www.kooperation-international.de/foerderung/projekte/detail/info/entschluesselung-der-vielfaeltigen-ursachen-des-malariarisikos-durch-ki-in-amazonas-gemeinden" target="_blank"> BMFTR</a>,
+            this project leverages, in collaboration with the University of São Paulo, the 
+             <a href="https://pubmed.ncbi.nlm.nih.gov/34789490/" target="_blank">Mâncio Lima cohort (Johansen, et al., 2021)</a>, 
+            which includes rich demographic, phenotypic, and genetic data from about 20% of households in Brazil’s main urban malaria hotspot, 
+            together with national surveillance data from 
+            <a href="http://sivepmalaria.saude.gov.br/sivep_malaria/" target="_blank">SIVEP-Malaria</a>,  
+            covering most symptomatic cases across the country.          
+          </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      
+         <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+        <!--  <div style="flex:1 1 90%;max-width:200px;background:#ffffff;border-radius:16px;box-shadow:0 8px 25px rgba(0,0,0,0.1);padding:20px;display:flex;align-items:center;justify-content:center;min-width:280px;">
+          <img src="path_to_your_image.jpg" alt="Causal Discovery Illustration" style="width:auto;height:auto;border-radius:12px;"/>
+        </div> max-width:800px; -->
+      
+      <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 style="font-size:1.1em; color:#0670b8;">Unraveling the Causal Role of the Gut Microbiome in Mental Health</h2>
+          <h3 style="font-size:0.8em; color:#0670b8;"><em>Evidence for a Causal Contribution of Gut-Microbiota to Major Depressive Disorder in Humans</em></h3>
+        </div>
+           <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+            <!-- <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Conditional Causal Effect Identification from PAGs (CIDP)</h4> -->
+
+
+          <p style="text-align: justify; margin-top:0px;">
+            Understanding the causal influence of the gut microbiome on mental health is crucial for uncovering the biological pathways that connect the gut and the brain. By identifying potential causal taxa from observational data, researchers can better prioritize targets for experimental validation and develop more effective, personalized mental health interventions.  </p>
+          <p style="text-align: justify; margin-top:0px;">
+            Using data-driven causal inference, we identified <i>Eggerthella</i> and <i>Hungatella</i> as causal contributors to major depressive disorder (MDD), acting through two distinct gut–brain pathways independent of body mass index
+            <a href="https://www.medrxiv.org/content/10.1101/2024.12.05.24318549v1.full.pdf+html" target="_blank">(Fehse et al., forthcoming)</a>. 
+          </p>
+          <p style="text-align: justify; margin-top:0px;">
+            A follow-up study 
+             <a href="https://pubmed.ncbi.nlm.nih.gov/34789490/" target="_blank">(Thanarajah, et al., 2025, JAMA Psychiatry)</a>, 
+             shows that soft drink consumption may contribute to MDD through gut microbiota alterations, notably involving Eggerthella.
+          </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div> <!-- /.container -->
+    </section><!-- End Projects Section -->
+    
+
+    <!-- Publications Section -->
+    <section id="publications" class="section section-padding">
+      
+      <div class="container">
+      <h2 class="section-title wow fadeInUp">Publications</h2>
+    
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+         <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading20">  
+                <Strong>Ribeiro, A. H.</Strong>, Heider, D. (2025). 
+                dcFCI: Robust Causal Discovery Under Latent Confounding, Unfaithfulness, and Mixed Data. 
+                <i>arXiv preprint arXiv:2505.06542</i>. doi: 10.48550/arXiv.2505.06542. <a href="https://www.arxiv.org/abs/2505.06542" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
+              <div class="panel-body">
+                Causal discovery is central to inferring causal relationships from observational data. 
+                In the presence of latent confounding, algorithms such as Fast Causal Inference (FCI) 
+                learn a Partial Ancestral Graph (PAG) representing the true model's Markov Equivalence Class. 
+                However, their correctness critically depends on empirical faithfulness, the assumption that observed 
+                (in)dependencies perfectly reflect those of the underlying causal model, which often fails in practice 
+                due to limited sample sizes. To address this, we introduce the first nonparametric score to assess 
+                a PAG's compatibility with observed data, even with mixed variable types. This score is both necessary 
+                and sufficient to characterize structural uncertainty and distinguish between distinct PAGs.
+                We then propose data-compatible FCI (dcFCI), the first hybrid causal discovery algorithm to
+                jointly address latent confounding, empirical unfaithfulness, and mixed data types. 
+                dcFCI integrates our score into an (Anytime)FCI-guided search that systematically explores, ranks,
+                and validates candidate PAGs. Experiments on synthetic and real-world scenarios demonstrate that
+                dcFCI significantly outperforms state-of-the-art methods, often recovering the true PAG even in 
+                small and heterogeneous datasets. Examining top-ranked PAGs further provides valuable 
+                insights into structural uncertainty, supporting more robust and informed causal reasoning and decision-making.               </div>
+          </div>
+       </div>
+       
+       <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading19">  
+                Anand, T.V., <Strong>Ribeiro, A. H.</Strong>, Tian, J., Hripcsak G., and Bareinboim, E. (2025). 
+                Causal discovery over clusters of variables in Markovian systems.
+                <i>Advances in Neural Information Processing Systems (NeurIPS 2025).</i> <a href="https://causalai.net/r128.pdf" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
+              <div class="panel-body">
+                Causal discovery methods are powerful tools for uncovering the structure of relationships among variables, yet they face significant challenges in scalability and interpretability, especially in high-dimensional settings. In many domains, researchers are not only interested in causal links between individual variables, but also in relationships among sets or clusters of variables. Learning causal structure at the cluster level can both reveal higher-order relationships of interest and improve scalability. In this work, we introduce an approach for causal discovery over clusters in Markov causal systems. We propose a new graphical model that encodes knowledge of relationships between user-defined clusters while fully representing independencies and dependencies over clusters, faithful to a given distribution. We then define and characterize a graphical equivalence class of these models that share cluster-level independence information. Lastly, we present a sound and complete algorithm for causal discovery to represent learnable causal relationships between clusters of variables.
+              </div>
+          </div>
+       </div>
+
+       <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading18">  
+                Yvernes, C., Devijver, E., <Strong>Ribeiro, A. H.</Strong>, Clausel, M., and Gaussier, E. (2025). 
+                Relaxing partition admissibility in cluster-dags: a causal calculus with arbitrary variable clustering.
+                <i>Advances in Neural Information Processing Systems (NeurIPS 2025).</i>
+                <!--
+                <a href="https://causalai.net/r128.pdf" target="_blank">(Link)</a>
+                -->
+                </td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+              <div class="panel-body">
+              Cluster DAGs (C-DAGs) provide an abstraction of causal graphs in which nodes represent clusters of variables, and edges encode both cluster-level causal relationships and dependencies arisen from unobserved confounding. C-DAGs define an equivalence class of acyclic causal graphs that agree on cluster-level relationships, enabling causal reasoning at a higher level of abstraction. However, when the chosen clustering induces cycles in the resulting C-DAG, the partition is deemed inadmissible under conventional C-DAG semantics. In this work, we extend the C-DAG framework to support arbitrary variable clusterings by relaxing the partition admissibility constraint, thereby allowing cyclic C-DAG representations. We extend the notions of d-separation and causal calculus to this setting, significantly broadening the scope of causal reasoning across clusters and enabling the application of C-DAGs in previously intractable scenarios. Our calculus is both sound and atomically complete with respect to the do-calculus: all valid interventional queries at the cluster level can be derived using our rules, each corresponding to a primitive do-calculus step.               </div>
+          </div>
+       </div>
+
+
+       <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading17">
+                Thanarajah, S. E., <Strong>Ribeiro, A. H.</Strong>, …, Heider, D, Dannlowski, U., Hahn, T. (2025). 
+                Soft drink consumption and depression mediated by gut microbiome alterations.
+                <i>JAMA Psychiatry.</i> <a href="https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2839019" target="_blank">(Link)</a>
+                </td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+              <div class="panel-body">
+        Soft drink consumption is linked to negative physical and mental health outcomes, but its association with major depressive disorder (MDD) and the underlying mechanisms remains unclear.
+        To examine the association between soft drink consumption and MDD diagnosis and severity and whether this association is mediated by changes in the gut microbiota, particularly Eggerthella and Hungatella abundance.
+        This multicenter cohort study was conducted in Germany using cross-sectional data from the Marburg-Münster Affective Cohort. Patients with MDD and healthy controls (aged 18-65 years) recruited from the general population and primary care between September 2014 and September 2018 were analyzed. Data analyses were conducted between May and December 2024.
+        Primary analyses included multivariable regression and analysis of variance (ANOVA) models examining the association between soft drink consumption and MDD diagnosis and symptom severity, controlling for site and education, and Eggerthella and Hungatella abundance, controlling for site, education, and library size. Mediation analyses tested whether microbiota abundance mediated the soft drink–MDD link.
+        It was found that soft drink consumption may contribute to MDD through gut microbiota alterations, notably involving Eggerthella. Public health strategies to reduce soft drink intake may help mitigate depression risk, especially among vulnerable populations; in addition, interventions for depression targeting the microbiome composition appear promising.
+        </div> 
+        </div>      
+        
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading16">  
+                <Strong>Ribeiro, A. H.*</Strong>, Soler, J. M. P., Corder, R. M., Ferreira, M. U., Heider D. (2025).
+                From Bites to Bytes: Understanding How and Why Individual Malaria Risk Varies Using Artificial Intelligence and Causal Inference.
+                <i>Frontiers in Genetics.</i>. doi: 10.3389/fgene.2025.1599826. <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2025.1599826/abstract" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+              <div class="panel-body">
+              With an estimated 263 million cases recorded worldwide in 2023, malaria remains a major global health challenge, particularly in tropical regions with limited healthcare access. Beyond its health impact, malaria disrupts education, economic development, and social equality. While traditional research has focused on biological factors underlying human-mosquito interactions, growing evidence highlights the complex interplay of environmental, behavioral, and socioeconomic factors, alongside mobility and both human and parasite genetics, in shaping transmission dynamics, recurrence patterns, and control effectiveness. This work shows how integrating Artificial Intelligence (AI), Machine Learning (ML), and Causal Inference can advance malaria research by identifying context-specific risk factors, uncovering causal mechanisms, and informing more effective, targeted interventions. Drawing on the Mâncio Lima cohort, a longitudinal, multimodal study of malaria risk in Brazil’s main urban hotspot, and related studies in the Amazon, we highlight how rigorous, data-driven approaches can address the substantial variability in malaria risk across individuals and communities. AI-driven methods facilitate the integration of diverse high-dimensional datasets to uncover intricate patterns and improve individual risk stratification. Federated learning enables collaborative analysis across regions while preserving data privacy. Meanwhile, causal discovery and effect identification tools further strengthen these approaches by distinguishing genuine causal relationships from spurious associations. Together, these approaches offer a principled, scalable, and privacy-preserving framework that enables researchers to move beyond predictive modeling toward actionable causal insights. This shift supports precision public health strategies tailored to vulnerable populations, fostering more equitable and sustainable malaria control and contributing to the reduction of the global malaria burden.          
+               </div>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading15">  
+                Fehse L.*, <Strong>Ribeiro, A. H.*</Strong>, Winter, N. R., Thanarajah, S.E., … , Heider, D., Hahn, T. (2024). From Gut to Brain: Evidence for a Causal Contribution of Gut-Microbiota to Major Depressive Disorder in Humans.
+                <i>MedRxiv preprint</i>. doi: 10.1101/2024.12.05.24318549. <a href="https://www.medrxiv.org/content/10.1101/2024.12.05.24318549v1.full-text" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+              <div class="panel-body">
+                Major Depressive Disorder (MDD) is a highly prevalent, severe mental health condition that constitutes one of the leading causes of disability worldwide.
+                While recent animal studies suggest a causal role of the gut microbiome in the pathophysiology of MDD models, evidence in humans is still unclear due to
+                 small sample sizes, inconsistent clinical assessment of MDD diagnosis, and methodological limitations regarding causal inference in cross-sectional data. 
+                 Here, we explicitly address these shortcomings to investigate the potential causal link between the gut microbiome and MDD: 
+                 First, we replicate previous findings using one of the largest multicenter MDD cohorts for which microbiome data and in-depth diagnostic assessment are available
+                  (N=1,269 MDD patients and controls). We find a significant difference between healthy controls and MDD patients for the relative abundance of the four taxa
+                   Eggerthella, Hungatella, Coprobacillus, and Lachnospiraceae FCS020. Second, we employ state-of-the-art, fully data-driven causal inference tools within
+                    Judea Pearl’s framework, allowing us to derive model constraints from the data rather than relying on potentially strong, unrealistic assumptions. 
+                    Using this approach, we found data-driven evidence for Eggerthella and Hungatella as causal contributors to MDD. Furthermore, we show that Eggerthella and 
+                    Hungatella abundances are associated with MDD beyond the influence of body mass index, identifying two distinct pathways linking MDD to the gut microbiome. 
+                    Finally, the difference in relative abundance of these taxa between healthy and MDD patients was independent of antidepressant medication. 
+                Our study provides the first evidence for a potential causal role of gut-microbiota in the pathophysiology of depression in humans.           
+               </div>
+          </div>
+        </div>
+
+          
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading14">  
+              da Silva, T., Silva, E., Góis, A., Heider, D., Kaski, S. and Mesquita, D., <Strong>Ribeiro, A. H.</Strong> (2024). Human-in-the-Loop Causal Discovery under Latent Confounding using Ancestral GFlowNets. <i> arXiv preprint arXiv:2309.12032. </i> <a href="https://arxiv.org/abs/2309.12032" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+              <div class="panel-body">
+                Structure learning is the crux of causal inference. Notably, causal discovery (CD) algorithms are brittle when data is scarce, possibly inferring imprecise causal relations that contradict expert knowledge -- especially when considering latent confounders. To aggravate the issue, most CD methods do not provide uncertainty estimates, making it hard for users to interpret results and improve the inference process. Surprisingly, while CD is a human-centered affair, no works have focused on building methods that both 1) output uncertainty estimates that can be verified by experts and 2) interact with those experts to iteratively refine CD. To solve these issues, we start by proposing to sample (causal) ancestral graphs proportionally to a belief distribution based on a score function, such as the Bayesian information criterion (BIC), using generative flow networks. Then, we leverage the diversity in candidate graphs and introduce an optimal experimental design to iteratively probe the expert about the relations among variables, effectively reducing the uncertainty of our belief over ancestral graphs. Finally, we update our samples to incorporate human feedback via importance sampling. Importantly, our method does not require causal sufficiency (i.e., unobserved confounders may exist). Experiments with synthetic observational data show that our method can accurately sample from distributions over ancestral graphs and that we can greatly improve inference quality with human aid.            </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading13">  
+                da Silva, T., Silva, E., Góis, A., Heider, D., Kaski, S. and Mesquita, D., <Strong>Ribeiro, A. H.</Strong> (2024). Human-Aided Discovery of Ancestral Graphs. 
+                <i> LXAI Workshop at Neural Information Processing Systems (NeurIPS 2024). </i> <a href="https://openreview.net/pdf?id=PVOpWUJORs" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+              <div class="panel-body">
+                In data-scarce situations, causal discovery (CD) algorithms often produce unreliable causal relationships that may 
+                conflict with expert knowledge, especially in the presence of latent confounders. 
+                Additionally, most CD methods lack adequate uncertainty quantification, hindering users' ability to evaluate and refine results. 
+                To address these issues, we present a fully probabilistic CD method referred to as Ancestral GFlowNets (AGFNs). 
+                In a nutshell, AGFNs sample ancestral graphs (AGs) proportionally to a score-based belief distribution, 
+                allowing users to assess % and propagate the uncertainty of the discovered causal relationships.  
+                On top of that, we design an elicitation framework that enables the incorporation of human knowledge into the inference process via importance sampling.
+                Notably, our approach naturally accommodates CD on data sets with latent confounding and potentially heterogeneous data types, a setting that has received little attention from the literature.   
+                Finally, experimental results with observational data show that our method effectively samples from distributions over AGs and significantly enhances inference quality with human aid.  
+              </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading12">  
+                <Strong>Ribeiro, A. H.</Strong>, Crnkovic, M., Pereira, J. L., Fisberg, R. M., Sarti, F. M., Rogero, M. M., Heider, D., and Cerqueira, A. (2024). AnchorFCI: Harnessing Genetic Anchors for Enhanced Causal Discovery of Cardiometabolic Disease Pathways. <i> Frontiers in Genetics. </i> 
+                15:1436947. DOI: 10.3389/fgene.2024.1436947. <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2024.1436947/full" target="_blank">(Link)</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+              <div class="panel-body">
+                Cardiometabolic diseases, a leading global health concern, arise from a complex interplay of lifestyle choices, genetic predispositions, and biochemical markers. Although extensive research has uncovered strong associations among various risk factors and these diseases, grasping their causal relationships is vital for gaining deeper mechanistic insights and designing effective prevention and intervention strategies. We address this gap by introducing anchorFCI, a novel adaptation of the conservative Really Fast Causal Inference (RFCI) algorithm designed to enhance the discovery of causal relationships by strategically selecting and integrating reliable anchor variables from an additional set known not to be caused by the variables of interest. This approach is particularly well-suited for learning causal networks involving phenotypic, clinical, and sociodemographic factors, leveraging genetic variables recognized as not being influenced by these factors. By integrating these anchor variables along with knowledge of their non-ancestral relationships, anchorFCI effectively handles latent confounding while enhancing both robustness and discovery power. We demonstrate its effectiveness using data from the 2015 ISA-Nutrition study in São Paulo, Brazil, and further estimate the effect sizes of the uncovered causal relationships with state-of-the-art tools from Judea Pearl's framework, presenting a fully data-driven causal inference pipeline. The results not only support many established causal relationships but also elucidate their interconnections within a complex network, enhancing our understanding of the broader dynamics and the multifaceted nature of cardiometabolic risk.</div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <table style="width:100%">
+            <tr>
+              <td class="panel-heading" role="tab" id="heading11">  
+                Leite, J. M. R., <Strong>Ribeiro, A. H.</Strong>, Pereira, J. L., de Souza, C. A., Heider, D., ... & Sarti, F. M. (2024). Missense genetic variants in major bitter taste receptors are associated with diet quality and food intake in a highly admixed underrepresented population. 
+                <i> Clinical Nutrition ESPEN. </i> <a href= "https://doi.org/10.1016/j.clnesp.2024.06.045" target="_blank">https://doi.org/10.1016/j.clnesp.2024.06.045</a></td>
+              <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11"></a></td>
+            </tr> 
+          </table>
+          <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+              <div class="panel-body">
+                To investigate associations between Single Nucleotide Polymorphisms (SNPs) in the TAS1R and TAS2R taste receptors and diet quality, intake of alcohol, added sugar, and fat, using linear regression and machine learning techniques in a highly admixed population.
+                In the ISA-Capital health survey, 901 individuals were interviewed and had socioeconomic, demographic, health characteristics, along with dietary information obtained through two 24-h recalls. Data on 12 components related to food groups, nutrients, and calories was combined into a diet quality score (BHEI-R). BHEI-R, SoFAAs (calories from added sugar, saturated fat, and alcohol) and Alcohol use were tested for associations with 255 TAS2R SNPs and 73 TAS1R SNPs for 637 individuals with regression analysis and Random Forest. 
+                Significant SNPs were combined into Genetic taste scores (GTSs).
+                Among 23 SNPs significantly associated either by stepwise linear/logistic regression or random forest with any possible biological functionality, the missense variants rs149217752 in TAS2R40, for SoFAAs, and rs2233997 in TAS2R4, were associated with both BHEI-R (under 4% increase in Mean Squared Error) and SoFAAs. GTSs increased the variance explanation of quantitative phenotypes and there was a moderately high AUC for alcohol use.
+                The study provides insights into the genetic basis of human taste perception through the identification of missense variants in the TAS2R gene family. These findings may contribute to future strategies in precision nutrition aimed at improving food quality by reducing added sugar, saturated fat, and alcohol intake.
+             </div>
+          </div>
+      </div>
+
+		
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading10">  
+		    Meneguitti Dias, F., Ribeiro, E., <Strong>Ribeiro, A. H.</Strong>, Krieger, J., Antonio Gutierrez, M. (2023). Artificial Intelligence-Driven Screening System for Rapid Image-Based Classification of 12-Lead ECG Exams: A Promising Solution for Emergency Room Prioritization. <i> IEEE Access </i> <a href="https://doi.org/10.1109/ACCESS.2023.3328538" target="_blank">https://doi.org/10.1109/ACCESS.2023.3328538</a></td>
+        <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10"></a></td>
+      </tr> 
+    </table>
+    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+        <div class="panel-body">
+          The electrocardiogram (ECG) serves as a valuable diagnostic tool, providing crucial information about life-threatening cardiac conditions such as atrial fibrillation and myocardial infarction. A prompt and efficient assessment of ECG exams in environments such as Emergency Rooms (ERs) can significantly enhance the chances of survival for high-risk patients. Despite the presence of numerous works on ECG classification, most of these studies have concentrated on one-dimensional ECG signals, which are commonly found in publicly available ECG datasets. Nevertheless, the practical relevance of such methods is limited in hospital settings, where ECG exams are usually stored as images. In this study, we have developed an artificial intelligence-driven screening system specifically designed to analyze 12-lead ECG images. Our proposed method has been trained on an extensive dataset comprising 99,746 12-lead ECG exams collected from the ambulatory section of a tertiary hospital. The primary goal was to precisely classify the exams into three classes: Normal (N), Atrial Fibrillation (AFib), and Other (O). The evaluation of our approach yielded AUROC scores of 93.2%, 99.2%, and 93.1% for N, AFib, and O, respectively. To further validate our approach, we conducted evaluations using the 2018 China Physiological Signal Challenge (CPSC) database. In this evaluation, we achieved AUROC scores of 91.8%, 97.5%, and 70.4% for the classes N, AFib, and O, respectively. Additionally, we assessed our method using 1,074 exams acquired in the ER and obtained AUROC values of 98.3%, 98.0%, and 97.7% for the classes N, AFib, and O, respectively. Furthermore, we developed and deployed a system with a trained model within the ER of a tertiary hospital for research purposes. This system automatically retrieves newly captured ECG chart images from the Picture Archiving and Communication System (PACS) within the ER. These images undergo necessary preprocessing steps and serve as input for our proposed classification method. This comprehensive approach established an efficient and versatile end-to-end framework for ECG classification. The results of our study highlight the potential of leveraging artificial intelligence in the screening of ECG exams, offering a promising solution for the rapid assessment and prioritization of patients in the ER.
+        </div>
+       </div>
+   </div>
+
+
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading9">  
+
+	    Tajabadi, M, Grabenhenrich, L., <Strong>Ribeiro, A. H.</Strong>, Leyer, M., Heider D. (2023). Sharing Data With Shared Benefits: Artificial Intelligence Perspective. <i> J Med Internet Res 2023;25:e47540. </i> <a href="https://www.jmir.org/2023/1/e47540" target="_blank">(Link)</a></td>
+          <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+            <div class="panel-body">
+          Artificial intelligence (AI) and data sharing go hand in hand. In order to develop powerful AI models for medical and health applications, data need to be collected and brought together over multiple centers. However, due to various reasons, including data privacy, not all data can be made publicly available or shared with other parties. Federated and swarm learning can help in these scenarios. However, in the private sector, such as between companies, the incentive is limited, as the resulting AI models would be available for all partners irrespective of their individual contribution, including the amount of data provided by each party. Here, we explore a potential solution to this challenge as a viewpoint, aiming to establish a fairer approach that encourages companies to engage in collaborative data analysis and AI modeling. Within the proposed approach, each individual participant could gain a model commensurate with their respective data contribution, ultimately leading to better diagnostic tools for all participants in a fair manner.
+            </div>
+        </div>
+       </div>
+       
+
+<div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading8">Anand, T. V.*, <Strong>Ribeiro, A. H.*</Strong>, Tian, J. , Bareinboim, E. (2023). Causal Effect Identification in Cluster DAGs.<i> In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-23) </i>, 37(10), 12172-12179. <a href="https://doi.org/10.1609/aaai.v37i10.26435" target="_blank">https://doi.org/10.1609/aaai.v37i10.26435</a>  -- Selected for <a href="https://doi.org/10.48448/k4gf-7p67" target="_blank"> Oral Presentation </a> </td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+            <div class="panel-body">
+            Reasoning about the effect of interventions and counterfactuals is a fundamental task found throughout the data sciences.
+A collection of principles, algorithms, and tools has been developed
+for performing such tasks in the last decades (Pearl, 2000). One of the pervasive requirements found throughout
+this literature is the articulation of assumptions, which commonly
+appear in the form of causal diagrams. Despite the
+power of this approach, there are significant settings where
+the knowledge necessary to specify a causal diagram over
+all variables is not available, particularly in complex, high-dimensional
+domains. In this paper, we introduce a new graphical modeling tool called cluster DAGs (for short, CDAGs)
+that allows for the partial specification of relationships
+among variables based on limited prior knowledge, alleviating
+the stringent requirement of specifying a full causal
+diagram. A C-DAG specifies relationships between clusters
+of variables, while the relationships between the variables
+within a cluster are left unspecified, and can be seen as a
+graphical representation of an equivalence class of causal diagrams
+that share the relationships among the clusters. We
+develop the foundations and machinery for valid inferences
+over C-DAGs about the clusters of variables at each layer of
+Pearl’s Causal Hierarchy (Pearl and Mackenzie 2018; Bareinboim
+et al. 2020) - L1 (probabilistic), L2 (interventional), and
+L3 (counterfactual). In particular, we prove the soundness
+and completeness of d-separation for probabilistic inference
+in C-DAGs. Further, we demonstrate the validity of Pearl’s
+do-calculus rules over C-DAGs and show that the standard
+ID identification algorithm is sound and complete to systematically
+compute causal effects from observational data given
+a C-DAG. Finally, we show that C-DAGs are valid for performing
+counterfactual inferences about clusters of variables.
+		</div>
+          </div>
+       </div>
+
+
+
+        <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading7">
+		    Mundt, M., Cooper, K.W., Dhami, D.S., <Strong>Ribeiro, A. H.</Strong>, Smith, J.S., Bellot A., Hayes, T. (2023) Continual Causality: A Retrospective of the Inaugural AAAI-23 Bridge Program.<i> Proceedings of The First AAAI Bridge Program on Continual Causality, PMLR 208:1-10 </i>. <a href="https://proceedings.mlr.press/v208/mundt23a.html" target="_blank">(Link)</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7"></a></td>
+          </tr> 
+        </table>
+		<div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+            <div class="panel-body">
+              Both of the fields of continual learning and causality investigate complementary aspects of human cognition and are fundamental components of artificial intelligence if it is to reason and generalize in complex environments. Despite the burgeoning interest in investigating the intersection of the two fields, it is currently unclear how causal models may describe continuous streams of data and vice versa, how continual learning may exploit learned causal structure. We proposed to bridge this gap through the inaugural AAAI-23 “Continual Causality” bridge program, where our aim was to take the initial steps towards a unified treatment of these fields by providing a space for learning, discussions, and to build a diverse community to connect researchers. The activities ranged from traditional tutorials and software labs, invited vision talks, and contributed talks based on submitted position papers, as well as a panel and breakout discussions. Whereas materials are publicly disseminated as a foundation for the community: https://www.continualcausality.org, respectively discussed ideas, challenges, and prospects beyond the inaugural bridge are summarized in this retrospective paper.
+            </div>
+          </div>
+       </div>
+
+
+        <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading6">Jaber, A.*, <Strong>Ribeiro, A. H.*</Strong>, Zhang, J., Bareinboim, E. (2022). Causal Identification under Markov equivalence: Calculus, Algorithm, and Completeness.<i> In Advances in Neural Information Processing Systems, 35, 3679-3690. (NeurIPS-22).</i> <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/17a9ab4190289f0e1504bbb98d1d111a-Abstract-Conference.html" target="_blank"> (Link) </a> -- Highlighted Paper (<2%, out of 10,411).</td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+            <div class="panel-body">
+              One common task in many data sciences applications is to answer questions about
+the effect of new interventions, like: what would happen to Y if we make X equal
+to x while observing covariates Z = z?. Formally, this is known as conditional
+effect identification, where the goal is to determine whether a post-interventional
+distribution is computable from the combination of an observational distribution
+and assumptions about the underlying domain represented by a causal diagram.
+A plethora of methods was developed for solving this problem, including the
+celebrated do-calculus [Pearl, 1995]. In practice, these results are not always
+applicable since they require a fully specified causal diagram as input, which is
+usually not available. In this paper, we assume as the input of the task a less
+informative structure known as a partial ancestral graph (PAG), which represents a
+Markov equivalence class of causal diagrams, learnable from observational data.
+We make the following contributions under this relaxed setting. First, we introduce
+a new causal calculus, which subsumes the current state-of-the-art, PAG-calculus.
+Second, we develop an algorithm for conditional effect identification given a PAG
+and prove it to be both sound and complete. In words, failure of the algorithm to
+identify a certain effect implies that this effect is not identifiable by any method.
+Third, we prove the proposed calculus to be complete for the same task.
+            </div>
+          </div>
+       </div>
+  
+        <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading5"><Strong>Ribeiro, A. H.</Strong>, Bareinboim, E. (2022). Causal Inference and Data Fusion: Towards an Accelerated Process of Scientific Discovery.<i> 
+              OECD-22. Organisation for Economic Co-operation and Development, Volume “AI and the productivity of science” </i> <a href="https://causalai.net/r73.pdf" target="_blank"> (Link) </td>
+          </tr> 
+        </table>
+       </div>
+
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading5a">  
+            Dias, F. M., Samesima, N., <Strong>Ribeiro, A. H.</Strong>, Moreno, R. A., Pastore, C. A., Krieger, J. E., and Gutierrez,M. A. (2021). 2D Image-Based Atrial Fibrillation Classification. <i>In 2021 Computing in Cardiology (CinC),</i> volume 48, pages 1–4. IEEE. <a href="https://doi.org/10.23919/CinC53138.2021.9662735" target="_blank">https://doi.org/10.23919/CinC53138.2021.9662735</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5a" aria-expanded="false" aria-controls="collapse5a"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse5a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5a">
+            <div class="panel-body">
+              Atrial fibrillation (AF) is a common arrhythmia (0.5% worldwide prevalence) associated with an increased risk of various cardiovascular disorders, including stroke. Automated routine AF detection by Electrocardiogram (ECG) is based on the analysis of one-dimensional ECG signals and requires dedicated software for each type of device, limiting its wide use, especially with the rapid incorporation of telemedicine into the healthcare system. Here, we implement a machine learning method for AF classification using the region of interest (ROI) corresponding to the long DII lead automatically extracted from DI-COM 12-lead ECG images. We observed 94.3%, 98.9%, 99.1%, and 92.2% for sensitivity, specificity, AUC, and F1 score, respectively. These results indicate that the proposed methodology performs similar to one-dimensional ECG signals as input, but does not require a dedicated software facilitating the integration into clinical practice, as ECGs are typically stored in PACS as 2D images.
+            </div>
+          </div>
+       </div>
+       
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading5a">           
+            <Strong>Ribeiro, A. H.</Strong>, Vidal, M. C., Sato, J. R., Fujita A. (2021). Granger Causality among Graphs and Application to Functional Brain Connectivity in Autism Spectrum Disorder.<i> Entropy.</i> 23(9):1024. <a href="https://mdpi.com/1099-4300/23/9/1204" target="_blank">https://doi.org/10.3390/e23091204</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5a" aria-expanded="false" aria-controls="collapse5a"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse5a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5a">
+            <div class="panel-body">
+              Graphs/networks have become a powerful analytical approach for data modeling. Besides, with the advances in sensor technology, dynamic time-evolving data have become more common. In this context, one point of interest is a better understanding of the information flow within and between networks. Thus, we aim to infer Granger causality (G-causality) between networks' time series. In this case, the straightforward application of the well-established vector autoregressive model is not feasible. Consequently, we require a theoretical framework for modeling time-varying graphs. One possibility would be to consider a mathematical graph model with time-varying parameters (assumed to be random variables) that generates the network.
+Suppose we identify G-causality between the graph models' parameters. In that case, we could use it to define a G-causality between graphs. Here, we show that even if the model is unknown, the spectral radius is a reasonable estimate of some random graph model parameters. We illustrate our proposal's application to study the relationship between brain hemispheres of controls and children diagnosed with Autism Spectrum Disorder (ASD). We show that the G-causality intensity from the brain's right to the left hemisphere is different between ASD and controls.
+            </div>
+          </div>
+       </div>
+       
+       <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading4"><Strong>Ribeiro, A. H.</Strong>, Soler, J. M. P. (2020). Learning Genetic and Environmental Graphical Models from Gaussian Family Data.<i> Statistics in Medicine.</i> 39: 2403– 2422. <a href="https://doi.org/10.1002/sim.8545" target="_blank">https://doi.org/10.1002/sim.8545</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+            <div class="panel-body">
+              Many challenging problems in biomedical research rely on understanding how variables are associated with each other and influenced by genetic and environmental factors. Probabilistic graphical models (PGMs) are widely acknowledged as a very natural and formal language to describe relationships among variables and have been extensively used for studying complex diseases and traits. In this work, we propose methods that leverage observational Gaussian family data for learning a decomposition of undirected and directed acyclic PGMs according to the influence of genetic and environmental factors. Many structure learning algorithms are strongly based on a conditional independence test. For independent measurements of normally distributed variables, conditional independence can be tested through standard tests for zero partial correlation. In family data, the assumption of independent measurements does not hold since related individuals are correlated due to mainly genetic factors. Based on univariate polygenic linear mixed models, we propose tests that account for the familial dependence structure and allow us to assess the significance of the partial correlation due to genetic (between-family) factors and due to other factors, denoted here as environmental (within-family) factors, separately. Then, we extend standard structure learning algorithms, including the IC/PC and the really fast causal inference (RFCI) algorithms, to Gaussian family data. The algorithms learn the most likely PGM and its decomposition into two components, one explained by genetic factors and the other by environmental factors. The proposed methods are evaluated by simulation studies and applied to the Genetic Analysis Workshop 13 simulated dataset, which captures significant features of the Framingham Heart Study.
+            </div>
+          </div>
+       </div>
+       
+        <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading3"><Strong>Ribeiro, A. H.</Strong>, Soler, J. M. P., Hirata Jr., R. (2019). Variance-Preserving Estimation of Intensity Values Obtained from Omics Experiments.<i>  Frontiers in Genetics.</i> 10:855. <a href="https://www.frontiersin.org/article/10.3389/fgene.2019.00855" target="_blank">https://doi.org/110.3389/fgene.2019.00855</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body">
+              Faced with the lack of reliability and reproducibility in omics studies, more careful and robust methods are needed to overcome the existing challenges in the multi-omics analysis. In conventional omics data analysis, signal intensity values (denoted by M and values) are estimated neglecting pixel-level uncertainties, which may reflect noise and systematic artifacts. For example, intensity values from two-color microarray data are estimated by taking the mean or median of the pixel intensities within the spot and then subjected to a within-slide normalization by LOWESS. Thus, focusing on estimation and normalization of gene expression profiles, we propose a spot quantification method that takes into account pixel-level variability. Also, to preserve relevant variation that may be removed in LOWESS normalization with poorly chosen parameters, we propose a parameter selection method that is parsimonious and considers intrinsic characteristics of microarray data, such as heteroskedasticity. The usefulness of the proposed methods is illustrated by an application to real intestinal metaplasia data. Compared with the conventional approaches, the analysis is more robust and conservative, identifying fewer but more reliable differentially expressed genes. Also, the variability preservation allowed the identification of new differentially expressed genes. Using the proposed approach, we have identified differentially expressed genes involved in pathways in cancer and confirmed some molecular markers already reported in the literature.
+            </div>
+          </div>
+       </div>
+       
+           
+     <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading2b"><Strong>Ribeiro, A. H.</Strong> (2018). Identification of Causality in Genetics and Neuroscience.<i> Doctoral dissertation, Department of Computer Science, University of Sao Paulo. </i> <a href="https://doi.org/10.11606/T.45.2019.tde-15032019-190109" target="_blank">https://doi.org/10.11606/T.45.2019.tde-15032019-190109</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2b" aria-expanded="false" aria-controls="collapse2b"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse2b" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2b">
+            <div class="panel-body">
+              Causal inference may help us to understand the underlying mechanisms and the risk factors of diseases. In Genetics, it is crucial to understand how the connectivity among variables is influenced by genetic and environmental factors. Family data have proven to be useful in elucidating genetic and environmental influences, however, few existing approaches are able of addressing structure learning of probabilistic graphical models (PGMs) and family data analysis jointly. We propose methodologies for learning, from observational Gaussian family data, the most likely PGM and its decomposition into genetic and environmental components. They were evaluated by a simulation study and applied to the Genetic Analysis Workshop 13 simulated data, which mimic the real Framingham Heart Study data, and to the metabolic syndrome phenotypes from the Baependi Heart Study. In neuroscience, one challenge consists in identifying interactions between functional brain networks (FBNs) - graphs. We propose a method to identify Granger causality among FBNs. We show the statistical power of the proposed method by simulations and its usefulness by two applications: the identification of Granger causality between the FBNs of two musicians playing a violin duo, and the identification of a differential connectivity from the right to the left brain hemispheres of autistic subjects.
+            </div>
+          </div>
+       </div>
+
+       
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading2"><Strong>Ribeiro, A. H.</Strong>, Lotufo, P., Fujita, A, Goulart, A., Chor, D., Mill, J. G., Bensenor, I., Santos, I. S. (2017). Association Between Short-Term Systolic Blood Pressure Variability and Carotid Intima-Media Thickness in ELSA-Brasil Baseline.<i> American Journal of Hypertension.</i> 30:954–960. <a href="https://doi.org/10.1093/ajh/hpx076" target="_blank">https://doi.org/10.1093/ajh/hpx076</a> </td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body">
+              Blood pressure (BP) is associated with carotid intima-media thickness (CIMT), but few studies have explored the association between BP variability and CIMT. We aimed to investigate this association in the Brazilian Longitudinal Study of Adult Health (ELSA-Brasil) baseline. We found a small but significant association between SBP variability and CIMT values. This was additive to the association between SBP central tendency and CIMT values, supporting a role for high short-term SBP variability in atherosclerosis.
+            </div>
+          </div>
+       </div>
+       
+       <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading1"><Strong>Ribeiro, A. H.</Strong>,  Soler, J. M. P., Neto, E. C., Fujita, A. (2016). Causal Inference and Structure Learning of Genotype-Phenotype Networks Using Genetic Variation.<i> In Big Data Analytics in Genomics. </i> Springer International Publishing, New York, p. 89-143. <a href="https://doi.org/10.1007/978-3-319-41279-5_3" target="_blank">https://doi.org/10.1007/978-3-319-41279-5_3</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body">
+              A major challenge in biomedical research is to identify causal relationships among genotypes, phenotypes, and clinical outcomes from high-dimensional measurements. Causal networks have been widely used in systems genetics for modeling gene regulatory systems and for identifying causes and risk factors of diseases. In this chapter, we describe fundamental concepts and algorithms for constructing causal networks from observational data. In biological context, causal inferences can be drawn from the natural experimental setting provided by Mendelian randomization, a term that refers to the random assignment of genotypes at meiosis. We show that genetic variants may serve as instrumental variables, improving estimation accuracy of the causal effects. In addition, identifiability issues that commonly arise when learning network structures may be overcome by using prior information on genotype–phenotype relations.
+            </div>
+          </div>
+       </div>
+       
+       
+       <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading0"><Strong>Ribeiro, A. H.</Strong> (2014). Gene expression analysis taking into account measurement errors and application to real data.<i> Master thesis, Department of Computer Science, University of Sao Paulo. </i> <a href="https://doi.org/10.11606/D.45.2014.tde-04082014-163616" target="_blank">https://doi.org/10.11606/D.45.2014.tde-04082014-163616</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+            <div class="panel-body">
+              Any measurement, since it is made for a real instrument, has an uncertainty associated with it. In the present work, we address this issue of uncertainty in two-channel cDNA Microarray experiments, a technology that has been widely used in recent years and is still an important tool for gene expression studies. Tens of thousands of gene representatives are printed onto a glass slide and hybridized simultaneously with mRNA from two different cell samples. Different fluorescent dyes are used for labeling both samples. After hybridization, the glass slide is scanned yielding two images. Image processing and analysis programs are used for spot segmentation and pixel statistics computation, for instance, the mean, median and variance of pixel intensities for each spot. The same statistics are computed for the pixel intensities in the background region. Statistical estimators such as the variance gives us an estimate of the accuracy of a measurement. Based on the intensity estimates for each spot, some data transformations are applied in order to eliminate systematic variability so we can obtain the effective gene expression. This paper shows how to analyze gene expression measurements with an estimated error. We presented an estimate of this uncertainty and we studied, in terms of error propagation, the effects of some data transformations. An example of data transformation is the correction of the bias estimated by a robust local regression method, also known as <i>lowess</i>. With the propagated errors obtained, we also showed how to use them for detecting differentially expressed genes between different conditions. Finally, we compared the results with those obtained by classical analysis methods, in which the measurement errors are disregarded. We conclude that modeling the measurements uncertainties can improve the analysis, since the results obtained in a real gene expressions data base were consistent with the literature.
+            </div>
+          </div>
+       </div>
+       
+       
+     
+       
+     </div>
+      </div><!-- /.container -->
+   </section><!-- End Publications Section -->
+
+ 
+ 
+    <!-- Libraries Section -->
+    <section id="libraries" class="section section-padding">
+      
+      <div class="container">
+      <h2 class="section-title wow fadeInUp">Open-Source Libraries</h2>
+    
+        <div class="panel-group" id="accordion-libraries" role="tablist" aria-multiselectable="true">
+       
+          <div class="panel panel-default">
+            <table style="width:100%">
+              <tr>
+                <td class="panel-heading" role="tab" id="heading4-libraries"><Strong>Ribeiro, A. H.</Strong> (2025). 
+                dcFCI: Robust causal discovery under latent confounding, unfaithfulness, and mixed data.
+                <a href="https://github.com/adele/dcFCI" target="_blank">https://github.com/adele/dcFCI</a> </td>
+                <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-libraries" data-target="#collapse5-libraries" aria-expanded="false" aria-controls="collapse5-libraries"></a></td>
+              </tr> 
+            </table>
+            <div id="collapse5-libraries" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5-libraries">
+                <div class="panel-body">
+                  This package provides an implementation of the dcFCI algorithm. 
+                  Technical details are provided in the paper by Ribeiro & Heider (2025), entitled 
+                  "dcFCI: Robust Causal Discovery Under Latent Confounding, Unfaithfulness, and Mixed Data",  
+                  available at <a href="https://www.arxiv.org/pdf/2505.06542" target="_blank">arXiv preprint arXiv:2505.06542</a>.
+                </div>
+              </div>
+           </div>
+
+       
+          <div class="panel panel-default">
+            <table style="width:100%">
+              <tr>
+                <td class="panel-heading" role="tab" id="heading4-libraries"><Strong>Ribeiro, A. H.</Strong> (2024). anchorFCI: an extension of the FCI algorithm designed to improve robustness and discovery power in causal discovery by strategically selecting reliable anchors, while leveraging their known non-ancestral relationships. <a href="https://github.com/adele/anchorFCI" target="_blank">https://github.com/adele/anchorFCI</a> </td>
+                <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-libraries" data-target="#collapse4-libraries" aria-expanded="false" aria-controls="collapse4-libraries"></a></td>
+              </tr> 
+            </table>
+            <div id="collapse4-libraries" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4-libraries">
+                <div class="panel-body">
+                  This package provides an implementation of the anchorFCI algorithm. 
+                  Technical details are provided in the paper by Ribeiro et al. (2024), entitled "AnchorFCI: harnessing genetic anchors for enhanced causal discovery of cardiometabolic disease pathways", 
+                  available at <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2024.1436947/full" target="_blank">doi: 10.3389/fgene.2024.1436947</a>.
+                  AnchorFCI is an extension of the FCI algorithm designed to improve robustness and discovery power in causal discovery by strategically selecting reliable anchors, while leveraging their known non-ancestral relationships.
+                  It operates on two sets of variables: the first set contains the variables of interest, while the second comprises variables that are not caused by any from the first.
+                  While this structure is beneficial for various applications, it is especially well-suited for datasets involving phenotypic, clinical, and sociodemographic variables (the first set), alongside genetic variables, such as SNPs (the second set), which are recognized as not being caused by the first set.
+                </div>
+              </div>
+           </div>
+
+          <div class="panel panel-default">
+            <table style="width:100%">
+              <tr>
+                <td class="panel-heading" role="tab" id="heading3-libraries"><Strong>Ribeiro, A. H.</Strong> (2022). PAGId: an R package for causal effect identification in Partial Ancestral Graphs. <a href="https://github.com/adele/PAGId" target="_blank">https://github.com/adele/PAGId</a> </td>
+                <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-libraries" data-target="#collapse3-libraries" aria-expanded="false" aria-controls="collapse3-libraries"></a></td>
+              </tr> 
+            </table>
+            <div id="collapse3-libraries" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3-libraries">
+                <div class="panel-body">
+                  This package implements the CIDP and IDP algorithms for identifying (conditional) causal effects from a Partial Ancentral Graph (PAG). Technical details are provided in the NeurIPS 2022 paper by Jaber A., Ribeiro A. H., Zhang J., and Bareinboim E., (2022) entitled "Causal Identification under Markov equivalence: Calculus, Algorithm, and Completeness".
+                 </div>
+              </div>
+           </div>
+
+      <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading2-libraries"><Strong>Ribeiro, A. H.</Strong> (2020). FamilyBasedPGMs: an R package for learning genetic and environmental graphical models from family data. <a href="https://github.com/adele/FamilyBasedPGMs" target="_blank">https://github.com/adele/FamilyBasedPGMs</a> </td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-libraries" data-target="#collapse2-libraries" aria-expanded="false" aria-controls="collapse2-libraries"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse2-libraries" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-libraries">
+            <div class="panel-body">
+              This package provides methods for learning, from observational Gaussian family data (i.e., Gaussian data clusterized in families), Gaussian undirected and directed acyclic PGMs describing linear relationships among multiple phenotypes and a decomposition of the learned PGM into unconfounded genetic and environmental PGMs. Methods are based on zero partial correlation tests derived in the work by <a href="#heading4">Ribeiro and Soler (2020)</a>.
+            </div>
+          </div>
+       </div>
+       
+               <div class="panel panel-default">
+        <table style="width:100%">
+          <tr>
+            <td class="panel-heading" role="tab" id="heading1-libraries"><Strong>Ribeiro, A. H.</Strong> (2019). OmicsMA: An R Package for Variance-Preserving Estimation and Normalization of M-A Values from Omics Experiments. <a href="https://github.com/adele/omicsMA" target="_blank">https://github.com/adele/omicsMA</a></td>
+            <td><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-libraries" data-target="#collapse1-libraries" aria-expanded="false" aria-controls="collapse1-libraries"></a></td>
+          </tr> 
+        </table>
+        <div id="collapse1-libraries" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1-libraries">
+            <div class="panel-body">
+              This package provides methods for estimating and normalizing the M (intensity log-ratio) and A (mean log intensity) values from two-channel (or two-color) microarrays. Unlike conventional estimation methods which take into account only measures of location (e.g., mean and median) of the pixel intensities of each channel, the provided estimation method takes into account pixel-level variability, which may reflects uncertainties due noise and systematic artifacts.  
+            </div>
+          </div>
+       </div>
+       
+     </div>
+      </div><!-- /.container -->
+   </section><!-- End Libraries Section -->
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#about"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.inview.min.js"></script> 
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="assets/js/scripts.js"></script>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  -->
+</body>
+</html>
