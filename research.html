@@ -56,29 +56,20 @@
 		<nav class="navbar navbar-custom" role="navigation">
 		      <div class="container-fluid">
 		      
-		      
 		      <!-- BRAND -->
-
-          
-          		      <!-- BRAND -->
           <div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
           
           <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="#about"><h1 style="padding-left:15px">C<span
+          <a class="navbar-brand" href="#about">
+            <h1 style="padding-left:15px">C<span
           style="font-size: 2.8rem;">ausal</span>AI<span 
           style="font-size: 2.8rem;">4</span>H<span 
-          style="font-size: 2.8rem;">ealth</span>
-
-            </h1></a>
+          style="font-size: 2.8rem;">ealth</span></h1></a>
           </div>
-		      
-		      
 
-          
 
-          </div>
 		  	   
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -88,6 +79,7 @@
 						<li><a href="#publications">Publications</a></li>
 						<li><a href="#libraries">Libraries</a></li>
 					</ul>
+				</div>
 				</div>
 		</nav>
 		<script>
@@ -118,12 +110,6 @@
               <a href="https://www.medizin.uni-muenster.de/imi/das-institut.html" target="_blank"><strong>Institute of Medical Informatics at the University of Münster</strong></a>,
               with support from the German
               <i>Federal Ministry of Research, Technology and Space (BMFTR)</i>.
-              </p>
-              <p  align="justify">
-              <!-- While most AI methods excel at pattern recognition and prediction,
-              true scientific insight requires understanding the effects of interventions,
-              revealing not only why systems behave as they do, but also how
-              we can act on them to achieve desired outcomes. -->
               </p>
               <p  align="justify">
               Our mission is to <strong>advance both the theoretical foundations and translational 
@@ -291,6 +277,8 @@
       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
       <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
         box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div id="heading-proj01">
+          
         <div class="panel panel-default">
         <div class="panel-heading">
             <h2 style="font-size:1.1em; color:#0670b8;">Uncertainty-Quantified Causal Discovery</h2>
@@ -301,8 +289,18 @@
             mixed variable types, and potential faithfulness violations,
             while quantifying structural uncertainty to support reliable
             downstream analyses such as effect estimation and intervention planning.
+            <br>
+            <p class="pull-right">
+            <a class="collapsed" role="button" data-toggle="collapse" 
+            data-parent="#accordion" data-target="#collapse-proj01" aria-expanded="false" 
+            aria-controls="collapse-proj01"><strong>Learn More  </strong></a>
+             </p>
           </p>
-          <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+        </div>
+        </div>
+        
+        <div id="collapse-proj01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-proj01">
+            <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:40px;">
             <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Data-Compatible Fast Causal Inference (dcFCI)</h4>
             <p style="text-align: justify; margin:0;">
             <a href="https://www.arxiv.org/abs/2505.06542" target="_blank">
@@ -314,29 +312,40 @@
             The <a href="https://github.com/adele/dcFCI" target="_blank">dcFCI R package</a> is publicly available on GitHub.
             </p>
           </div>
-          </div>
-        <!--<a class="pull-right" href="" download target="_blank"> <strong>Learn More</strong></a>-->
         </div>
-      </div>
+        </div>
+        </div>
+
       
       
       <!-- Project 2 -->
       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
       <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
         box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div id="heading-proj02">
         <div class="panel panel-default">
         <div class="panel-heading">
           <h2 style="font-size:1.1em; color:#0670b8;">Expert-Guided Causal Discovery</h2>
           <h3 style="font-size:0.8em; color:#0670b8;"><em>Integrating Expert Priors and Feedback Into Data-Driven Learning</em></h3>
         </div>
           <p style="text-align: justify; margin-top:20px;">
-            We develop methods that integrate expert knowledge into data-driven causal discovery, 
-            enhancing both the reliability and validity of learned models. 
-            By embedding expert insight into the learning process, 
-            our algorithms learn from data while remaining grounded in domain expertise.
+            We develop methods that integrate expert knowledge into data-driven causal discovery,
+            enhancing the reliability and validity of learned models. 
+            By incorporating expert insight directly into the learning process, 
+            our algorithms extract patterns from data while remaining anchored in domain expertise.
+                        <br>
+            <p class="pull-right">
+            <a class="collapsed" role="button" data-toggle="collapse" 
+            data-parent="#accordion" data-target="#collapse-proj02" aria-expanded="false" 
+            aria-controls="collapse-proj02"><strong>Learn More  </strong></a>
+             </p>
           </p>
-    <!-- Subproject 1: anchorFCI -->
-    <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+         </div>
+        </div>
+            
+    <div id="collapse-proj02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-proj02">
+        <!-- Subproject 1: anchorFCI -->
+    <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:40px;">
       <h4 style="color:#0670b8; text-transform:none; margin-bottom:6px;">Anchor Fast Causal Inference (anchorFCI)</h4>
       <p style="text-align: justify; margin:0;">
         <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2024.1436947/full" target="_blank">
@@ -362,6 +371,7 @@
       </p>
     </div>
     </div>
+    
     </div>
     </div>
       <!-- 
@@ -374,7 +384,8 @@
       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
       <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
         box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
-       <div class="panel panel-default">
+       <div id="heading-proj03">
+        <div class="panel panel-default">
         <div class="panel-heading">
           <h2 style="font-size:1.1em; color:#0670b8;">Abtraction-Aware Causal Inference</h2>
           <h3 style="font-size:0.8em; color:#0670b8;"><em>Enhancing Scalabiliy and Interpretability Through Variable Clustering</em></h3>
@@ -382,9 +393,20 @@
           <p style="text-align: justify; margin-top:20px;">
           In high-dimensional and complex settings, it is often more informative to represent causal models at a higher level of abstraction than the individual variables themselves.
           By grouping related variables into clusters, we can simplify complex systems, highlight key causal relationships, and make inference more tractable.
+         
+         <br>
+          <p class="pull-right">
+          <a class="collapsed" role="button" data-toggle="collapse" 
+          data-parent="#accordion" data-target="#collapse-proj03" aria-expanded="false" 
+          aria-controls="collapse-proj03"><strong>Learn More  </strong></a>
+           </p>
           </p>
+        </div>
+        </div>
+        
+       <div id="collapse-proj03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-proj03">
            <!-- Subproject 1 -->
-          <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+          <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:40px;">
             <h4 style="color:#0670b8; text-transform:none; margin-bottom:6px;">Cluster Causal Diagrams (C-DAGs)</h4>
             <p style="text-align: justify; margin:0;">
               <a href="https://doi.org/10.1609/aaai.v37i10.26435" target="_blank">C-DAGs (Anand, et al. AAAI 2023)</a>
@@ -407,7 +429,7 @@
               The <a href="https://github.com/TaraAnand/CLOC" target="_blank">CLOC implementation in R</a> is available on GitHub.
             </p>
           </div>
-         </div>
+        </div>
         </div>
       </div>
       
@@ -416,19 +438,32 @@
       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
       <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
         box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
-        <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2 style="font-size:1.1em; color:#0670b8;">Fully Data-Driven Causal Inference in Semi-Markovian Systems</h2>
-          <h3 style="font-size:0.8em; color:#0670b8;"><em>From Causal Discovery to Effect Identification and Estimation under Latent Confounding</em></h3>
-        </div>
-          <p style="text-align: justify; margin-top:20px;">
-          In general, a causal model cannot be uniquely determined from observational data alone.
-          However, causal discovery algorithms can partially recover it, defining a 
-          set of plausible models known as the Markov Equivalence Class (MEC). 
-          In Semi-Markovian Systems, where hidden confounders may exist, such a class
-          is typically represented as a Partial Ancestral Graph (PAG).
-          </p>
-           <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+        <div id="heading-proj04">
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 style="font-size:1.1em; color:#0670b8;">Fully Data-Driven Causal Inference in Semi-Markovian Systems</h2>
+            <h3 style="font-size:0.8em; color:#0670b8;"><em>From Causal Discovery to Effect Identification and Estimation under Latent Confounding</em></h3>
+          </div>
+            <p style="text-align: justify; margin-top:20px;">
+            In general, a causal model cannot be uniquely determined from observational data alone.
+            However, causal discovery algorithms can partially recover it, defining a 
+            set of plausible models known as the Markov Equivalence Class (MEC). 
+            In Semi-Markovian Systems, where hidden confounders may exist, such a class
+            is typically represented as a Partial Ancestral Graph (PAG).
+            
+            <br>
+            <p class="pull-right">
+            <a class="collapsed" role="button" data-toggle="collapse" 
+            data-parent="#accordion" data-target="#collapse-proj04" aria-expanded="false" 
+            aria-controls="collapse-proj04"><strong>Learn More  </strong></a>
+             </p>
+            </p>
+            </div>
+          </div>
+          
+          
+        <div id="collapse-proj04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-proj04">
+          <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:40px;">
             <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Conditional Causal Effect Identification from PAGs (CIDP)</h4>
             <p style="text-align: justify; margin:0;">
           We developed the first sound and complete calculus and algorithms for identifying (conditional) causal effects from PAGs
@@ -448,18 +483,29 @@
     </h3>
     
       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
-        <!--  <div style="flex:1 1 90%;max-width:200px;background:#ffffff;border-radius:16px;box-shadow:0 8px 25px rgba(0,0,0,0.1);padding:20px;display:flex;align-items:center;justify-content:center;min-width:280px;">
-          <img src="path_to_your_image.jpg" alt="Causal Discovery Illustration" style="width:auto;height:auto;border-radius:12px;"/>
-        </div> max-width:800px; -->
-      
-      <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
+     <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
         box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div id="heading-app01">
         <div class="panel panel-default">
         <div class="panel-heading">
+          
           <h2 style="font-size:1.1em; color:#0670b8;">Deciphering the Multifaceted Causes of Malaria Risk in Amazonian Communities</h2>
           <h3 style="font-size:0.8em; color:#0670b8;"><em>A Collaborative Approach Incorporating AI and Causality</em></h3>
         </div>
-           <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
+          
+          <p style="text-align: justify; margin-top:0px;">
+          <p class="pull-right">
+            <a class="collapsed" role="button" data-toggle="collapse" 
+            data-parent="#accordion" data-target="#collapse-app01" aria-expanded="false" 
+            aria-controls="collapse-app01"><strong>Learn More  </strong></a>
+             </p>
+          </p>
+          
+        </div>
+        </div>
+        
+        <div id="collapse-app01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-app01">
+           <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:40px;">
             <!-- <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Conditional Causal Effect Identification from PAGs (CIDP)</h4> -->
 
 
@@ -487,18 +533,31 @@
 
 
       
-         <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
         <!--  <div style="flex:1 1 90%;max-width:200px;background:#ffffff;border-radius:16px;box-shadow:0 8px 25px rgba(0,0,0,0.1);padding:20px;display:flex;align-items:center;justify-content:center;min-width:280px;">
           <img src="path_to_your_image.jpg" alt="Causal Discovery Illustration" style="width:auto;height:auto;border-radius:12px;"/>
         </div> max-width:800px; -->
       
       <div style="flex:1 1 90%; background:#ffffff; border-radius:16px;
         box-shadow:0 8px 25px rgba(0,0,0,0.1); padding:20px; min-width:280px;">
+        <div id="heading-app02">
         <div class="panel panel-default">
         <div class="panel-heading">
           <h2 style="font-size:1.1em; color:#0670b8;">Unraveling the Causal Role of the Gut Microbiome in Mental Health</h2>
           <h3 style="font-size:0.8em; color:#0670b8;"><em>Evidence for a Causal Contribution of Gut-Microbiota to Major Depressive Disorder in Humans</em></h3>
         </div>
+        
+          <p style="text-align: justify; margin-top:0px;">
+          <p class="pull-right">
+            <a class="collapsed" role="button" data-toggle="collapse" 
+            data-parent="#accordion" data-target="#collapse-app02" aria-expanded="false" 
+            aria-controls="collapse-app02"><strong>Learn More  </strong></a>
+             </p>
+          </p>
+        </div>
+        </div>
+        
+        <div id="collapse-app02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-app02">
            <div style="background:#f5f9fc; border-left:4px solid #0670b8; border-radius:8px; padding:12px 16px; margin-top:20px;">
             <!-- <h4 style="color:#0670b8; text-transform:none; font-size:1em; margin-bottom:6px;">Conditional Causal Effect Identification from PAGs (CIDP)</h4> -->
 
@@ -518,6 +577,7 @@
         </div>
       </div>
       </div>
+      
       </div> <!-- /.container -->
     </section><!-- End Projects Section -->
     
@@ -559,6 +619,7 @@
                 insights into structural uncertainty, supporting more robust and informed causal reasoning and decision-making.               </div>
           </div>
        </div>
+        
        
        <div class="panel panel-default">
           <table style="width:100%">
